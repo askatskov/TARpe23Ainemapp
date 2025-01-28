@@ -1,0 +1,262 @@
+.theme-title {
+	margin: 0;
+}
+
+.bg-color {
+	background: #08142C;
+}
+
+.appearance_page_trovium_guide #wpwrap {
+	background: #fff;
+	color: #333;
+}
+
+.col-left {
+	width: 40%;
+	float: left;
+	padding: 0 20px;
+}
+
+.col-right {
+	width: 56%;
+	float: right;
+}
+
+.text-align-end {
+	text-align: end;
+}
+
+.col-right img {
+	width: 100%;
+}
+
+.wrapper-info h1 {
+	color: #08142C;
+	font-size: 28px;
+}
+
+.wrapper-info h4 {
+	margin: 0;
+	color: #333;
+	font-size: 16px;
+}
+
+.wrapper-info a {
+	text-decoration: none;
+}
+
+#wpcontent,
+#wpfooter {
+	margin-right: 20px;
+}
+
+.centerbold a {
+	color: #fff;
+	padding: 9px 12px;
+	text-decoration: none;
+	font-size: 14px;
+	background: #08142C;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	display: inline-block;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 32px;
+	padding: 12px 28px;
+}
+
+a.bg-color {
+	color: #fff;
+	padding: 9px 12px;
+	text-decoration: none;
+	font-size: 14px;
+	background: linear-gradient(135deg,rgb(8,185,162) 25%,rgb(109,81,224) 100%);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	display: inline-block;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 32px;
+	padding: 12px 28px;
+}
+
+.centerbold a:hover {
+	background: #2e2e2e;
+}
+
+.padding-20-l-r {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.intro {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 20px;
+	padding: 20px 0;
+	margin-top: 1rem;
+}
+
+.intro p {
+	font-size: 16px;
+	font-weight: 600;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+.col-left p {
+	color: #2e2e2e;
+	font-size: 14px;
+	text-align: justify;
+}
+
+hr {
+	margin: 20px 0;
+}
+
+.col-left-inner img {
+	width: 100%;
+	margin-bottom: 15px;
+	border: solid 1px #ccc;
+}
+
+.started {
+	float: left;
+	width: 100%;
+}
+
+.intro-text img {
+	float: left;
+	-webkit-box-shadow: 0 0 15px 0px #ddd;
+	box-shadow: 0 0 15px 0px #ddd;
+	background: #fff;
+}
+
+.coupon-code {
+	float: right;
+	width: 58%;
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	padding: 12px 5px;
+}
+
+.coupon-code span {
+	color: #e6f04e;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+img {
+	border-radius: 10px;
+}
+
+img.table-img {
+	width: 100%;
+}
+
+.col-left-inner {
+	width: 100%;
+	float: left;
+}
+
+.col-right-inner {
+	width: 100%;
+	float: right;
+}
+
+.feature {
+	float: left;
+	width: 100%;
+}
+
+.col-md-4 {
+	width: 33.33%;
+	float: left;
+}
+
+.started ul {
+	list-style: disc;
+	font-size: 15px;
+	margin-left: 30px;
+}
+
+.color_bg_blue {
+	background-color: #d11190;
+	display: block;
+	float: left;
+	padding: 15px 0 35px 35px;
+	width: 95%;
+}
+
+.color_bg_blue p {
+	color: #fff;
+}
+
+.color_bg_blue h4 {
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.blink {
+	width: 100%;
+	text-align: left;
+}
+
+.blink h4 {
+	font-size: 18px;
+	color: white;
+	-webkit-animation: blink 1s linear infinite;
+	animation: blink 1s linear infinite;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* theme activation*/
+.welcome a {
+	font-size: 21px;
+	padding: 8px 17px 38px;
+}
+
+.notice p.dismiss-link {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.notice {
+	position: relative;
+}

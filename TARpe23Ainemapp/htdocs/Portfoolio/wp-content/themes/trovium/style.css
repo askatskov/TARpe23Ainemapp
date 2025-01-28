@@ -1,0 +1,203 @@
+/*
+Theme Name: Trovium
+Theme URI: https://effethemes.com/themes/trovium-wordpress-theme/
+Author: Effe Themes
+Author URI: https://effethemes.com/
+Description: Trovium is a sleek and professional multipurpose block theme, designed for agencies, corporate businesses, and creative professionals aiming to leave a lasting impression. With full site editing (FSE) functionality, Trovium gives you the freedom to customize every element effortlessly. Its modern design and versatile layouts make it perfect for showcasing portfolios, building corporate websites, or creating unique agency platforms. Empower your brand with a theme that combines innovation, style, and usability in every detail.
+Requires at least: 6.6
+Tested up to: 6.6
+Requires PHP: 5.7
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: trovium
+Tags: blog, portfolio, block-styles, e-commerce, full-site-editing, two-columns, full-width-template, custom-logo, custom-menu, custom-background, editor-style, block-patterns, custom-header, translation-ready, template-editing
+*/
+
+/* ================= > General Styles < ================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--wp--preset--color--custom-background-primary);
+  color: var(--wp--preset--color--custom-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li > a {
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+:where(.wp-site-blocks) > * {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.hover-read-me:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+/* ================= > Header < ================= */
+
+.header-menu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-column-align: center;
+      justify-self: center
+}
+
+.wp-block-site-title > a {
+  text-decoration: none;
+}
+
+.wp-block-site-title > a:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+.wp-block-navigation-item:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+.wp-block-navigation__responsive-container-content {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: start !important;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+  border: 0 !important;
+}
+
+.wp-block-navigation-submenu > li {
+  background: var(--wp--preset--color--custom-background-secondary) !important;
+  color: var(--wp--preset--color--custom-text-color);
+}
+
+/* ================= > Footer < ================= */
+
+.copy > a {
+  text-decoration: none;
+}
+
+.copy > a > mark {
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.copy > a > mark:hover {
+  color: inherit !important;
+}
+
+/* ================= > Blog < ================= */
+
+.wp-block-post-title > a:hover {
+  color: var(--wp--preset--color--custom-primary) !important;
+}
+
+.wp-block-button__link,
+.wp-block-search__button {
+  background: var(--wp--preset--color--custom-primary);
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.wp-block-button__link:hover,
+.wp-block-search__button:hover {
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  background: var(--wp--preset--color--custom-background-secondary);
+  color: #fff !important;
+}
+
+/* ================= > Media Queries < ================= */
+
+@media (max-width: 1024px) {
+  .wp-block-columns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero-button {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) .wp-block-navigation__responsive-container-close,
+  .wp-block-navigation__responsive-container-open:not(.always-shown),
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none;
+  }
+
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .wp-block-navigation__container {
+    --navigation-layout-justification-setting: flex-start !important;
+    --navigation-layout-justify: flex-start !important;
+  }
+
+  .header-menu {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .header-columns {
+    -ms-grid-column-align: center !important;
+        justify-self: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wp-block-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

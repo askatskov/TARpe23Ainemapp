@@ -1,0 +1,14 @@
+.list-group-item-success {
+    background-color: aquamarine;
+    font-weight: 700;
+}
+
+.list-group-item-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.list-group-item-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}

@@ -1,0 +1,147 @@
+# Translation of Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release) in Estonian
+# This file is distributed under the same license as the Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-08-01 15:43:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: et_EE\n"
+"Project-Id-Version: Plugins - Akismet Anti-spam: Spam Protection - Stable (latest release)\n"
+
+#: class.akismet-admin.php:271 views/config.php:265
+msgid "Status"
+msgstr "Olek"
+
+#: views/notice.php:200
+msgid "The key you entered is invalid. Please double-check it."
+msgstr "Sisestatud võti on vigane. Palun kontrolli seda."
+
+#: views/notice.php:77
+msgid "Network functions are disabled."
+msgstr "Võrgufunktsioonid on välja lülitatud."
+
+#: views/notice.php:41 views/notice.php:50
+msgid "Akismet has detected a problem."
+msgstr "Akismet on avastanud probleemi."
+
+#: class.akismet-admin.php:542
+msgid "Awaiting spam check"
+msgstr "Rämpsukontrolli ootel"
+
+#: class.akismet-widget.php:12
+msgid "Akismet Widget"
+msgstr "Akismeti moodul"
+
+#: class.akismet-widget.php:13
+msgid "Display the number of spam comments Akismet has caught"
+msgstr "Näita Akismeti poolt kinnipüütud rämpskommentaaride arvu"
+
+#. translators: The placeholder is the number of pieces of spam blocked by
+#. Akismet.
+#: class.akismet-widget.php:109
+msgid "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</strong>"
+msgid_plural "<strong class=\"count\">%1$s spam</strong> blocked by <strong>Akismet</strong>"
+msgstr[0] "<strong>Akismet</strong> on püüdnud kinni <strong class=\"count\">%1$s rämpskommentaari</strong>"
+msgstr[1] "<strong>Akismet</strong> on püüdnud kinni <strong class=\"count\">%1$s rämpskommentaari</strong>"
+
+#: class.akismet-admin.php:107 class.akismet-admin.php:254
+#: class.akismet-admin.php:723 views/config.php:81
+msgid "Settings"
+msgstr "Seaded"
+
+#: class.akismet-admin.php:288
+msgid "Cheatin&#8217; uh?"
+msgstr "Proovid rehepappi?"
+
+#: class.akismet-admin.php:370
+msgid "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comment already. "
+msgid_plural "<a href=\"%1$s\">Akismet</a> has protected your site from %2$s spam comments already. "
+msgstr[0] "<a href=\"%1$s\">Akismet</a> on kaitsnud sinu ajaveebi %2$s rämpskommentaari eest</a>."
+msgstr[1] "<a href=\"%1$s\">Akismet</a> on kaitsnud sinu ajaveebi %2$s rämpskommentaari eest."
+
+#: class.akismet-admin.php:546
+msgid "Flagged as spam by Akismet"
+msgstr "Märgitud rämpsuks Akismeti poolt"
+
+#: class.akismet-admin.php:566
+msgid "History"
+msgstr "Ajalugu"
+
+#: class.akismet-admin.php:358
+msgctxt "comments"
+msgid "Spam"
+msgstr "Märgi rämpsuks"
+
+#: class.akismet-admin.php:548
+msgid "Cleared by Akismet"
+msgstr "Akismeti poolt kontrollitud"
+
+#: class.akismet-admin.php:589
+msgid "%s approved"
+msgid_plural "%s approved"
+msgstr[0] "%1$s heakskiidetud kommentaar"
+msgstr[1] "%1$s heakskiidetud kommentaari"
+
+#: class.akismet-admin.php:649
+msgid "Akismet caught this comment as spam during an automatic retry."
+msgstr "Akismet märkis selle kommentaari automaatse järelkontrolli käigus rämpsuks."
+
+#. translators: The placeholder is a short string (like 'spam' or 'approved')
+#. denoting the new comment status.
+#: class.akismet-admin.php:676
+msgid "Comment status was changed to %s"
+msgstr "Kommentaari olek muudetud: %s"
+
+#: class.akismet-admin.php:652
+msgid "Akismet cleared this comment during an automatic retry."
+msgstr "Akismet lubas selle kommentaari automaatse järelkontrolli käigus."
+
+#: class.akismet-admin.php:566 class.akismet-admin.php:574
+msgid "View comment history"
+msgstr "Vaata kommentaaride ajalugu"
+
+#: class.akismet-admin.php:87 class.akismet-admin.php:1271
+msgid "Akismet"
+msgstr "Akismet"
+
+#: class.akismet-admin.php:552
+msgid "Flagged as spam by %s"
+msgstr "Märgitud rämpsuks kasutaja %s poolt"
+
+#: class.akismet-admin.php:554
+msgid "Un-spammed by %s"
+msgstr "Märgitud mitterämpsuks kasutaja %s poolt"
+
+#: class.akismet-widget.php:69 class.akismet-widget.php:91
+msgid "Spam Blocked"
+msgstr "Rämpskirjad on blokeeritud"
+
+#: class.akismet-widget.php:74
+msgid "Title:"
+msgstr "Pealkiri:"
+
+#: class.akismet-admin.php:245 class.akismet-admin.php:256
+#: class.akismet-admin.php:269
+msgid "Akismet Configuration"
+msgstr "Akismeti häälestus"
+
+#: class.akismet-admin.php:232
+msgid "Akismet Stats"
+msgstr "Akismeti näidud"
+
+#: class.akismet-admin.php:435
+msgid "Check for Spam"
+msgstr "Rämpsukontroll"
+
+#. translators: The placeholder is an amount of time, like "7 seconds" or "3
+#. days" returned by the function human_time_diff().
+#: class.akismet-admin.php:696
+msgid "%s ago"
+msgstr "%s tagasi"
+
+#: class.akismet-admin.php:83
+msgid "Comment History"
+msgstr "Kommentaaride ajalugu"

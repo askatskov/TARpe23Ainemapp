@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormide loomine</title>
+</head>
+<body>
+    <h1>Vormide loomine</h1>
+    <form action="#" method="post" autocomplete="on">
+        <label for="kasutajanimi">Kasutajanimi: </label>
+        <input type="text" id="kasutajanimi" name="kasutajanimi" maxlength="6" placeholder="max pikkus 6"><br><br>
+        
+        <label for="kursus">Kursus: </label>
+        <input type="text" id="kursus" name="kursus" maxlength="3" placeholder="max pikkus 3"><br><br>
+
+        <label for="osakond">Osakonna number: </label>
+        <input type="number" id="osakond" name="osakond" value="1" min="1"><br><br>
+
+        <label for="parool">Parool: </label>
+        <input type="password" id="parool" name="parool"><br><br>
+
+        <label for="teenus">Vali teenus: </label>
+        <select id="teenus" name="teenus">
+            <option value="odav">Odav 0,59€</option>
+			<option value="enamvähem">enamvähem 1,59€</option>
+			<option value="kallis">kallis 2,59€</option>
+        </select><br><br>
+
+        <label>Roll: </label>
+        <input type="radio" id="admin" name="roll" value="admin">
+        <label for="admin">Admin</label>
+
+        <input type="radio" id="moderaator" name="roll" value="moderaator">
+        <label for="moderaator">Moderaator</label>
+
+        <input type="radio" id="user" name="roll" value="user">
+        <label for="user">User</label><br><br>
+
+        <label for="tingimused">Nõustun tingimustega: </label>
+        <input type="checkbox" id="tingimused" name="tingimused"><br><br>
+
+        <label for="enesetutvustus">Enesetutvustus: </label><br>
+        <textarea id="enesetutvustus" name="enesetutvustus" rows="5" cols="30"></textarea><br><br>
+
+        <button type="reset">Tühjenda väljad</button>
+        <button type="submit">Saada</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+:root {
+    --theme-darkmode-bg-color: #292929;
+    --theme-darkmode-text-color: #fff;
+    --theme-darkmode-alt-text-color: #000;
+
+    --theme-darkmode-text-rgb-color: 255, 255, 255;
+    --theme-darkmode-alt-text-rgb-color: 0, 0, 0;
+
+    --theme-darkmode-primary-color: #fc8019;
+    --theme-darkmode-secondary-color: #FFC107;
+
+    --theme-darkmode-header-background: #000;
+
+}
+
+[data-theme="dark"] {
+    --theme-bg-color: var(--theme-darkmode-bg-color);
+    --theme-text-color: var(--theme-darkmode-text-color);
+    --theme-alt-text-color: var(--theme-darkmode-alt-text-color);
+
+    --theme-text-rgb-color: var(--theme-darkmode-text-rgb-color);
+    --theme-alt-text-rgb-color: var(--theme-darkmode-alt-text-rgb-color);
+
+    --theme-primary-color: var(--theme-darkmode-primary-color);
+    --theme-secondary-color: var(--theme-darkmode-secondary-color);
+
+    --theme-header-background: var(--theme-darkmode-header-background);
+}
+
+[data-theme="dark"] body.custom-background {
+    background-color: var(--theme-darkmode-bg-color);
+}
+
+/* Dark mode css
+**------------------------------------------------ */
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ylesanne5.js" defer></script>
+</head>
+<body>
+    <h1>Temperatuurikontroll</h1>
+    <label for="temperatuur">Sisesta temperatuur kraadides:</label>
+    <input type="number" id="temperatuur" placeholder="Temperatuur">
+    <button onclick="kontrolliTemperatuur()">Kontrolli</button>
+
+    <h1>Kasutajanime kontroll</h1>
+    <label for="kasutajanimi">Sisesta kasutajanimi:</label>
+    <input type="text" id="kasutajanimi" placeholder="Kasutajanimi">
+    <button onclick="kontrolliKasutajanimi()">Kontrolli</button>
+
+    <h1>Piletite hind</h1>
+    
+    <label for="vanus">Sisesta vanus:</label>
+    <input type="number" id="vanus" placeholder="Vanus"><br><br>SS
+
+    <label for="piletitüüp">Vali piletitüüp:</label>
+    <select id="piletitüüp">
+        <option value="täispilet">Täispilet</option>
+        <option value="sooduspilet">Sooduspilet</option>
+    </select><br><br>
+
+    <button onclick="arvutaPiletihind()">Arvuta hind</button>
+    
+    <div id="output"></div>
+
+    <script src="ylesanne5.js"></script>
+</body>
+</html>

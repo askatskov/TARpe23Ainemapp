@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Ylesanne3.js"></script>
+    <title>Arvutamine</title>
+</head>
+<body>
+
+<h1>Arvutamine</h1>
+<!-- Sõidu aeg ja kaugus -->
+<h2>Sõidu aeg ja kaugus</h2>
+<form onsubmit="return calculateTravelTime();">
+    <label for="kaugus">Kaugus (km):</label>
+    <input type="number" id="kaugus" placeholder="Kaugus" required>
+    
+    <label for="kiirus">Kiirus (km/h):</label>
+    <input type="number" id="kiirus" placeholder="Kiirus" required>
+
+    <input type="button" value="Arvuta" onclick="calculateTravelTime()">
+</form>
+<div id="travelTimeResult" class="result"></div>
+
+<!-- Postituste arv ja leheküljed -->
+<h2>Postituste arv lehekülgedel</h2>
+<form onsubmit="return calculatePages();">
+    <label for="koguPostitused">Postituste koguarv:</label>
+    <input type="number" id="koguPostitused" placeholder="Postituste arv" required>
+    
+    <label for="postitusedLeheKohta">Postitusi leheküljel:</label>
+    <input type="number" id="postitusedLeheKohta" placeholder="Postituste arv leheküljel" required>
+
+    <input type="button" value="Arvuta" onclick="calculatePages()">
+</form>
+<div id="pagesResult" class="result"></div>
+
+<!-- Serveri töökulu -->
+<h2>Serveri töökulu</h2>
+<form onsubmit="return calculateServerCost();">
+    <label for="serveriVõim">Serveri võimsus (W):</label>
+    <input type="number" id="serveriVõim" placeholder="Serveri võimsus" required>
+
+    <label for="elektriHind">Elektri hind (senti/kWh):</label>
+    <input type="number" id="elektriHind" placeholder="Elektri hind" required>
+
+    <input type="button" value="Arvuta" onclick="calculateServerCost()">
+</form>
+<div id="serverCostResult" class="result"></div>
+
+</body>
+</html>

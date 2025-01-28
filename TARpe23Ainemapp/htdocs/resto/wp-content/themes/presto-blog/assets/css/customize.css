@@ -1,0 +1,71 @@
+/** For hiding video section notice */
+#sub-accordion-section-header_image .customize-section-description-container .customize-section-title .customize-control-notifications-container{
+    visibility: hidden;
+    height: 0;    
+}
+
+.tabs-control .customizer-tab label svg{
+    margin-right: 5px;
+}
+
+#customize-control-theme_info_theme label .customize-text_editor {
+    margin-bottom: 0;
+    display: block;
+    font-size: 16px;
+}
+
+#customize-control-theme_info_theme .sticky_info_row {
+    display: flex;
+    background: #fff;
+    margin-bottom: 1px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+#customize-control-theme_info_theme .sticky_info_row + br {
+    display: none;
+}
+
+#customize-control-theme_info_theme .sticky_info_row > .emoji {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#customize-control-theme_info_theme .sticky_info_row .emoji .emoji {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#customize-control-theme_info_theme .sticky_info_row a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 13px 13px 13px 37px;
+    width: 100%;
+    position: relative;
+}
+
+#customize-control-theme_info_theme .sticky_info_row a::after {
+    content: "\f345";
+    font: normal 20px/1 dashicons;
+    speak: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    position: absolute;
+    top: calc(50% - 10px)   ;
+    right: 10px;
+    z-index: 1;
+}

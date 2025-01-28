@@ -1,0 +1,312 @@
+/*
+Theme Name: Restaurant Bar
+Author: DiThemes
+Author URI: https://dithemes.com
+Description: Restaurant Bar is the ultimate WordPress theme for restaurant, bar, blog, eCommerce and business websites. it is Responsive, SEO-Friendly, fully Customizable, Beautiful and full featured WordPress theme. Restaurant Bar Theme is fully compatible with page builder plugins like Elementor and has a full width template. This theme is WooCommerce ready and also provides additional eCommerce options. Theme Features: Responsive, Customizable, SEO-Friendly, #Elementor ready, #WooCommerce ready, Reservations ready, #Beautiful design, #Blog, One Click #Demo Import, Page #Builder ready, Live Theme Options, #Typography Options, Beautiful Header, Footer Widgets, #Social Profile Icons, Ready Made Front Pages and much more. Let's create a #Delicious website. DEMO: http://demo.dithemes.com/di-restaurant/
+Version: 1.1
+Requires at least: 5.2
+Tested up to: 6.6
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, flexible-header, full-width-template, microformats, sticky-post, theme-options, threaded-comments, translation-ready, wide-blocks, food-and-drink, e-commerce, blog
+Text Domain: restaurant-bar
+Template: di-restaurant
+*/
+
+
+/* Top Bar CSS */
+
+.bgtoph p {
+	margin: 0;
+}
+
+.bgtoph .bgtoph-row {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.bgtoph a {
+	transition: color 0.5s ease-out;
+}
+
+.topbar-phone-mail-addr-sep-marker::before {
+	font-family: fontawesome;
+	content: "\f041";
+	padding-right: 0px;
+}
+
+.topbar-phone-mail-addr-sep-phone::before {
+	font-family: fontawesome;
+	content: "\f095";
+	padding-right: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.topbar-phone-mail-addr-sep-mail::before {
+	font-family: fontawesome;
+	content: "\f003";
+	padding-right: 5px;
+}
+
+
+@media (max-width: 767px) {
+	.topbar-left-side .spsl-topbar-left-cntr {
+		text-align: center;
+	}
+}
+
+.topbar-left-side .topbar-phone-mail-addr-sep,
+.topbar-right-side .topbar-phone-mail-addr-sep {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+@media (max-width: 767px) {
+	.topbar-left-side .topbar_ctmzr_left {
+		text-align: center;
+	}
+}
+
+.topbar-right-side .spsl-topbar-left-cntr {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	.topbar-right-side .spsl-topbar-left-cntr {
+		text-align: center;
+	}
+}
+
+/* Custom text / HTML. */
+
+.topbar-right-side .topbar_ctmzr_right {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	.topbar-right-side .topbar_ctmzr_right {
+		text-align: center;
+	}
+}
+
+/* Top Bar Menu */
+
+.topbar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.topbar-menu ul li {
+	display: inline;
+}
+
+.topbar-menu ul li a {
+	padding-right: 10px;
+}
+
+.topbar-menu ul li a:hover {
+	text-decoration: underline;
+}
+
+.topbar-left-side .topbar-menu {
+	text-align: left;
+}
+
+.topbar-right-side .topbar-menu {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	.topbar-left-side .topbar-menu,
+	.topbar-right-side .topbar-menu {
+		text-align: center;
+	}
+}
+
+/* CTA */
+
+.book-tbl .book-tbl-a {
+	border: 1px solid;
+	padding: 4px 14px;
+}
+
+@media (max-width: 767px) {
+	.topbar-left-side .book-tbl {
+		text-align: center;
+		padding-bottom: 14px;
+	}
+}
+
+.topbar-right-side .book-tbl {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	.topbar-right-side .book-tbl {
+		text-align: center;
+		padding-top: 14px;
+	}
+}
+
+/* Top Bar CSS END */
+
+/** CSS for Restaurant Reservation recommended plugin */
+
+.rtb-booking-form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.rtb-booking-form-form, .rtb-booking-form-form * {
+	box-sizing: border-box;
+}
+
+.rtb-booking-form-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.rtb-booking-form fieldset {
+	border: 0 solid #ccc;
+	margin: 0;
+	padding: 0;
+	margin-inline-start: 0;
+	padding-inline-start: 0;
+	width: 47.5%;
+	margin: 0 0 32px;
+}
+
+@media screen and (max-width: 768px) {
+	.rtb-booking-form fieldset {
+		width: 100%;
+	}
+}
+
+.rtb-booking-form fieldset legend {
+	padding: 0;
+}
+.rtb-booking-form legend {
+	margin-left: 0;
+}
+
+.rtb-booking-form fieldset>div {
+	margin-top: 2em;
+}
+
+.rtb-booking-form fieldset label {
+	width: 100%;
+	background: transparent;
+	padding: 3px;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 0 !important;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+}
+
+.rtb-booking-form form select, .rtb-booking-form form textarea, .rtb-booking-form form input {
+	border: 1px solid #333;
+	border-radius: 0;
+	background-color: white;
+	color: #777;
+	padding: 12px 21px;
+	margin-top: 0;
+	max-width: 100%;
+}
+
+.rtb-booking-form form select, .rtb-booking-form form input {
+	height: 48px;
+	width: 100%;
+}
+
+.rtb-booking-form fieldset input, .rtb-booking-form fieldset select, .rtb-booking-form fieldset textarea {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.rtb-booking-form fieldset.reservation label {
+	border-top-right-radius: 4px;
+}
+
+.rtb-booking-form fieldset.rtb-contact label {
+	border-top-left-radius: 4px;
+}
+
+#rtb-date, #rtb-time {
+	cursor: pointer !important;
+}
+
+.rtb-booking-form form fieldset .add-message {
+	clear: both;
+	position: relative;
+	float: right;
+	margin-top: 16px;
+}
+
+.rtb-booking-form .add-message a {
+	box-shadow: none;
+	padding: 6px 12px;
+	background: white;
+	color: #888;
+	text-decoration: none;
+	border: 1px solid #ddd;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	transition: background-color .3s, color .3s, border-color .3s;
+}
+
+.rtb-booking-form .add-message a:hover {
+	background-color: #333;
+	border-color: #333;
+	color: white;
+	text-decoration: none;
+}
+
+.rtb-booking-form fieldset.consent, .rtb-booking-form fieldset.optin {
+	width: 100%;
+}
+
+.rtb-booking-form fieldset.consent {
+	margin-bottom: 0;
+}
+
+.rtb-booking-form .consent label, .rtb-booking-form .optin label {
+	border: none;
+	font-weight: normal;
+	text-align: left;
+	line-height: 1.25;;
+}
+
+.rtb-booking-form fieldset.rtb-form-footer {
+	width: 100%;
+}
+
+.rtb-booking-form button {
+	background-color: #fff;
+	color: #009999;
+	text-align: center;
+	border: solid 1px;
+	border-radius: 6px;
+	padding: 6px 8px;
+	cursor: pointer;
+	transition: 0.3s linear;
+	margin: 10px 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.rtb-booking-form button:hover {
+	background-color: #009999;
+	color: #fff;
+}

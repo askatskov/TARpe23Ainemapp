@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-Joonistuslõuend</title>
+    <script src="joonistamine.js"></script>
+    <style type="text/css">
+        canvas{border: 2px solid rgb(0, 0, 0); background-color:#efefef;}
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = draw;
+    </script>
+        <canvas id="louend" width="200" height="200"></canvas> <br/>
+        <input type="button" value="Kustuta" onclick="kustuta()">
+        <input type="button" value="Joonista kõik" onclick="every()">
+        <input type="button" value="Jalad" onclick="jalad()"><br/>
+        <input type="button" value="Keha" onclick="keha()">
+        <input type="button" value="Käed" onclick="käed()">
+        <input type="button" value="Kaela" onclick="kaela()">
+        <input type="button" value="Pea" onclick="pea()">
+        <input type="button" value="Nägu" onclick="nägu()">
+</body>
+</html>

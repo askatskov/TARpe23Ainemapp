@@ -1,0 +1,10 @@
+// .has-background {
+
+// 	&:is(p, .wp-block-group) {
+// 		padding: var(--theme-content-spacing);
+// 	}
+// }
+
+:root :where(p.has-background, .wp-block-group.has-background) {
+	padding: var(--theme-content-spacing);
+}

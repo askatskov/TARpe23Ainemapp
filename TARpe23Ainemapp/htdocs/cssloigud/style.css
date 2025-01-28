@@ -1,0 +1,114 @@
+.spec-attribute {
+    background-color: yellow;
+    border: solid 2px red;
+}
+
+.spec-value {
+    color:lightblue;
+}
+
+p>span:first-of-type {
+    font-weight: bold;
+    color:red;
+}
+
+p > span:nth-of-type(3) {
+    text-decoration: underline;
+}
+
+p {
+    width:640px;
+}
+
+/* Esimene lõik */
+
+.pfirst {
+    background-color:rgb(212,245,212);
+    text-indent:2cm;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    width:445px;
+    line-height: 20px;
+    border-bottom: green 7px solid;
+    border-left: green 7px solid;
+    padding-left: 5px;
+    text-align: left;
+    margin-right: 240pt;
+}
+
+.psecond {
+    background-color:rgb(230,254,255);
+    font-family: 'Comic Sans MS';
+    font-size: 10pt;
+    text-indent:3cm;
+    text-align:justify;
+    padding-right: 5px;
+    border-bottom: #305d8d 7px double;
+    border-right: #305d8d 7px double;
+    line-height: 30px;
+    width:460px;
+    margin-left: 120pt;
+    margin-right: 96pt;
+}
+
+.pthird {
+    background-color: #efbda2;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    border-bottom: #a7527b 3px solid;
+    border-top: #a7527b 3px solid;
+    font-size: 12pt;
+    line-height: 23px;
+    margin-top: 2.1px;
+    margin-bottom: 2.1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width:380px;
+}
+
+.threeborders {
+    border-bottom: #a7527b 7px double;
+    border-top: #a7527b 7px double;
+    width:380px;
+    margin-left: 168pt;
+    margin-right: 168pt;
+}
+
+.pfourth {
+    font-family: Arial, Helvetica, sans-serif;
+    border: #c64842 3px dotted;
+    font-size: 13pt;
+    text-align: left;
+    margin-left: 72pt;
+    margin-right: 48pt;
+    line-height: 25pt;
+    width: 550px;
+    text-indent: -3.4cm;
+    padding-left: 3.5cm;
+    width: 415px;
+}
+
+.pfifth {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    border-bottom: #5b3e76 7px dashed;
+    border-right: #5b3e76 7px dashed;
+    text-align: left;
+    margin-right: 144pt;
+    line-height: 31px;
+    width: 512px;
+}
+
+.pfifth:first-letter {
+    font-family: Algerian;
+    font-size: 45pt;
+    padding-right: 0.3cm;
+    padding-bottom: 0.3cm;
+    padding-top: 0.3cm;
+    float:left;
+    color: #5b3e76;
+}
+
+.endingspanred {
+    color: red;
+}

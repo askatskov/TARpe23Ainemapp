@@ -1,0 +1,14 @@
+.wp-block-button.is-style-button-outline-hover > a {
+  background: transparent !important;
+}
+
+/* ================= > Button Hover < ================= */
+
+.wp-block-button.is-style-button-outline-hover > a:hover {
+  background: var(--wp--preset--color--custom-primary) !important;
+  color: #fff !important;
+}
+
+.wp-block-button.is-style-button-hover-opacity > a:hover {
+  opacity: 0.8 !important;
+}

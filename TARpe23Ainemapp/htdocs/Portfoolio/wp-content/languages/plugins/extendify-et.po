@@ -1,0 +1,787 @@
+# Translation of Plugins - Extendify - Stable (latest release) in Estonian
+# This file is distributed under the same license as the Plugins - Extendify - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-10-17 14:43:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: et_EE\n"
+"Project-Id-Version: Plugins - Extendify - Stable (latest release)\n"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:5
+#: src/Library/components/Modal.jsx:33
+msgid "Pattern added"
+msgstr "Muster lisatud"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:5
+#: src/Library/components/Modal.jsx:105
+msgid "Design Patterns"
+msgstr "Disainimustrid"
+
+#. translators: %s is the site type name
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:3
+#: src/Library/components/sidebar/SiteTypeControl.jsx:46
+msgid "Site Type: %s"
+msgstr "Veebisaidi tüüp: %s"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:3
+#: src/Library/components/sidebar/CategoryControl.jsx:105
+#: src/Library/components/sidebar/SiteTypeControl.jsx:67
+msgid "Fetching..."
+msgstr "Hangin..."
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Library/components/sidebar/CategoryControl.jsx:97
+msgid "Retrying..."
+msgstr "Proovin uuesti..."
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Assist/svg/DesignLibraryMarkup.jsx:77
+#: src/Library/components/sidebar/CategoryControl.jsx:74
+msgid "All"
+msgstr "Kõik"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Library/components/sidebar/CategoryControl.jsx:40
+msgid "Design Type"
+msgstr "Kujunduse tüüp"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Library/components/ModalContent.jsx:80
+msgid "Loading more patterns..."
+msgstr "Laadin rohkem mustreid..."
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Library/components/ModalContent.jsx:38
+#: src/Library/components/ModalContent.jsx:70
+msgid "Loading Patterns..."
+msgstr "Laadin mustreid..."
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Library/components/BlockPreviewButton.jsx:28
+msgid "Insert Pattern"
+msgstr "Lisa muster"
+
+#: app/Library/Admin.php:139
+msgid "Extendify Library User Settings"
+msgstr "Extendify teegi kasutaja sätted"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Draft/components/ConsentSidebar.jsx:12
+#: src/HelpCenter/pages/AIChat.jsx:163
+msgid "Terms of Use"
+msgstr "Kasutustingimused"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Draft/components/ConsentSidebar.jsx:23
+#: src/HelpCenter/pages/AIChat.jsx:176
+msgid "Accept"
+msgstr "Nõustun"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/PagesSelect.jsx:155
+msgid "View more pages"
+msgstr "Vaata rohkem lehti"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/PagesSelect.jsx:116
+msgid "Pick the pages to add to your website"
+msgstr "Vali lehed, mida soovid oma veebisaidile lisada"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/HomeSelect.jsx:42
+msgid "Pick a design for your website"
+msgstr "Vali oma veebisaidile disain"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/PagesSelect.jsx:46
+msgid "Home page"
+msgstr "Pealeht"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/SiteTypeSelect.jsx:26
+msgid "What is your WordPress site about?"
+msgstr "Millest sinu WordPressi sait räägib?"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/HelpCenter/pages/KnowledgeBase.jsx:52
+#: src/Launch/pages/SiteTypeSelect.jsx:84
+msgid "Searching..."
+msgstr "Otsimine..."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/SiteInformation.jsx:97
+msgid "Enter your website name"
+msgstr "Sisesta oma veebisaidi nimi"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:160
+msgid "Adding page content"
+msgstr "Lehe sisu lisamine"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:123
+msgid "Installing necessary plugins"
+msgstr "Vajalike pluginate paigaldamine"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:83
+msgid "Creating a beautiful website"
+msgstr "Ilusa veebisaidi loomine"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/PagesSelect.jsx:120
+msgid "We already selected the most common pages for your type of website."
+msgstr "Oleme juba ära märkinud sellistel veebisaitidel kasutatuimad lehed."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/Goals.jsx:40
+msgid "We'll make sure your website has what it needs to achieve your goals."
+msgstr "Hoolitseme selle eest, et sinu veebisaidil oleks kõik vajalik sinu eesmärkide saavutamiseks."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/Goals.jsx:39
+msgid "What are your goals for your website?"
+msgstr "Millised on sinu eesmärgid veebisaidile?"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/SiteTypeSelect.jsx:27
+msgid "We will help you create your WordPress website quickly."
+msgstr "Aitame sul kiiresti luua endale WordPressi baasil veebisaidi."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:301
+msgid "Helping you to succeed"
+msgstr "Aitame sinu edule kaasa"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:82
+msgid "Applying your website styles"
+msgstr "Rakendame sinu veebisaidi stiile"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/InsertMenu.jsx:205
+msgid "Try again"
+msgstr "Proovi uuesti"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/InsertMenu.jsx:213
+msgid "Discard"
+msgstr "Loobu"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:156
+msgid "Personalizing your experience"
+msgstr "Isikupärastame sinu kogemust"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:155
+msgid "Populating data"
+msgstr "Täidame veebisaidi andmetega"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:196 src/Draft/app.js:23
+#: src/Draft/app.js:28
+msgid "AI Tools"
+msgstr "AI tööriistad"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/InsertMenu.jsx:164
+msgid "Replace selected block text"
+msgstr "Asenda valitud ploki tekst"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/Input.jsx:46
+msgid "AI is writing..."
+msgstr "AI kirjutab..."
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:158
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:254
+#: src/Draft/components/EditMenu.jsx:62
+#: src/Draft/components/ToolbarMenu.jsx:131
+msgid "Make longer"
+msgstr "Pikenda"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:154
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:250
+#: src/Draft/components/EditMenu.jsx:57
+#: src/Draft/components/ToolbarMenu.jsx:124
+msgid "Make shorter"
+msgstr "Tee lühemaks"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: src/Draft/components/EditMenu.jsx:47
+#: src/Draft/components/ToolbarMenu.jsx:110
+msgid "Fix spelling & grammar"
+msgstr "Paranda õigekirja ja grammatikat"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Nav.jsx:9
+msgid "Intermediate"
+msgstr "Vahepealne"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Nav.jsx:8
+msgid "Beginner"
+msgstr "Algaja"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Rating.jsx:26
+#: src/HelpCenter/components/ai-chat/Rating.jsx:46
+msgid "Remove rating"
+msgstr "Eemalda hinnang"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/Input.jsx:49
+msgid "Ask AI to generate text"
+msgstr "Lase tekst luua AI abil"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:150
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:246
+#: src/Draft/components/EditMenu.jsx:52
+#: src/Draft/components/ToolbarMenu.jsx:117
+msgid "Simplify language"
+msgstr "Lihtsusta keelekasutust"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:142
+#: src/Assist/tasks/images/AiWritingAssistantMarkup.jsx:238
+#: src/Draft/components/EditMenu.jsx:41
+#: src/Draft/components/ToolbarMenu.jsx:103
+msgid "Improve writing"
+msgstr "Paranda kirjutusstiili"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/DraftMenu.jsx:18
+msgid "Write a blog post about"
+msgstr "Kirjuta blogipostitus teemal"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/images/HelpCenterAIMarkup.jsx:97
+#: src/HelpCenter/components/ai-chat/Support.jsx:17
+msgid "For other questions, visit our support page."
+msgstr "Muude küsimuste puhul külasta meie kasutajatoe lehte."
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Nav.jsx:36
+msgid "WordPress Comfort Level"
+msgstr "WordPressi oskuste tase"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Nav.jsx:10
+msgid "Advanced"
+msgstr "Edasijõudnu"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Rating.jsx:47
+msgid "Rate that this answer was not helpful"
+msgstr "Vastus oli sinu hinnangul kasulik"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Rating.jsx:27
+msgid "Rate that this answer was helpful"
+msgstr "Vastu polnud sinu arvates kasulik"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/images/HelpCenterAIMarkup.jsx:81
+#: src/HelpCenter/components/ai-chat/Question.jsx:24
+msgid "Hi there!"
+msgstr "Tere!"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Question.jsx:33
+msgid "Ask your WordPress question…"
+msgstr "Küsi oma WordPressi küsimus…"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/images/HelpCenterAIMarkup.jsx:84
+#: src/HelpCenter/components/ai-chat/Question.jsx:27
+msgid "Ask me any questions about WordPress."
+msgstr "Esita meile küsimusi WordPressi kohta."
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Answer.jsx:81
+msgid "Ask Another Question"
+msgstr "Esita järgmine küsimus"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Answer.jsx:35
+msgid "Oops! We were unable to send your question."
+msgstr "Ups! Sinu küsimust ei õnnestunud saata."
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/ai-chat/Error.jsx:13
+msgid "Please try again."
+msgstr "Palun proovi uuesti."
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/knowledge-base/SearchForm.jsx:19
+msgid "Search for articles"
+msgstr "Otsige artikleid"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/pages/KnowledgeBase.jsx:28
+#: src/HelpCenter/pages/KnowledgeBase.jsx:84
+#: src/HelpCenter/pages/KnowledgeBase.jsx:89
+msgid "Knowledge Base"
+msgstr "Teadmistebaas"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/images/HelpCenterMarkup.jsx:159
+#: src/HelpCenter/pages/Tours.jsx:62
+msgid "Tour this page"
+msgstr "Tuurita lehel ringi"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:22
+msgid "Set Site Title"
+msgstr "Määra oma veebisaidi nimi"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: src/Assist/components/dashboard/LaunchCard.jsx:9
+#: src/Assist/components/dashboard/LaunchCard.jsx:18
+#: src/Assist/components/dashboard/LaunchCard.jsx:27
+#: src/Assist/components/dashboard/LaunchCard.jsx:36
+#: src/Assist/components/dashboard/LaunchCard.jsx:45
+#: src/Assist/components/dashboard/LaunchCard.jsx:54
+#: src/Assist/tasks/site-builder-launcher.js:10
+msgid "Create a super-fast, beautiful, and fully customized site in minutes with our Site Launcher."
+msgstr "Loo Site Launcher'i abil mõne minutiga kiire, kaunis ja täielikult kohandatud veebisait."
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/knowledge-base/Article.jsx:153
+msgid "There was an error loading this article"
+msgstr "Selle artikli laadimisel ilmnes viga"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/help-center.js:6
+#: src/Assist/tasks/images/HelpCenterMarkup.jsx:73
+#: src/HelpCenter/pages/Dashboard.jsx:26
+#: src/HelpCenter/tours/site-assistant.js:79
+msgid "Help Center"
+msgstr "Abikeskus"
+
+#: app/HelpCenter/Controllers/SupportArticlesController.php:100
+msgid "Page not found"
+msgstr "Lehte ei leitud"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/images/HelpCenterAIMarkup.jsx:179
+#: src/Assist/tasks/images/HelpCenterMarkup.jsx:141
+#: src/Assist/tasks/images/HelpCenterMarkup.jsx:200
+#: src/HelpCenter/pages/Tours.jsx:40 src/HelpCenter/pages/Tours.jsx:120
+msgid "Tours"
+msgstr "Tuurid"
+
+#. translators: This string represents the title of an "Home" page on a
+#. website. Please translate it in a way that fits the standard phrasing for a
+#. "Home" page in the target language, considering the common usage in websites
+#. for that language.
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:43
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:7
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:41
+#: src/Draft/pages/Home.jsx:55 src/Shared/lib/pages.js:67
+msgid "Home"
+msgstr "Avaleht"
+
+#. translators: This string represents the title of an "Events" page on a
+#. website that lists events of any kind. Please translate it in a way that
+#. fits the standard phrasing for an "Events" page in the target language,
+#. considering the common usage in websites for that language.
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:27
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:25
+#: src/Launch/pages/CreatingSite.jsx:256 src/Shared/lib/pages.js:39
+msgid "Events"
+msgstr "Sündmused"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:3
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/components/dashboard/QuickLinks.jsx:99
+#: src/HelpCenter/tours/site-assistant.js:35
+msgid "Quick Links"
+msgstr "Kiirviited"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:3
+#: src/Assist/components/ImageUploader.jsx:157
+#: src/HelpCenter/components/tours/GuidedTour.jsx:482
+msgid "Done"
+msgstr "Valmis"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/tours/GuidedTour.jsx:435
+msgid "Tour Steps"
+msgstr "Tuuri sammud"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/tours/GuidedTour.jsx:312
+msgid "Tour"
+msgstr "Tuur"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:5
+#: src/Library/components/topbar/Topbar.jsx:22
+msgid "Open for new pages"
+msgstr "Ava uutele lehtedele"
+
+#. translators: %s: Extendify Library term
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:5
+#: src/Library/components/topbar/Topbar.jsx:12
+msgid "Toggle %s on new pages"
+msgstr "Lülita %s uutel lehtedel sisse"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteDescription.jsx:82
+msgid "Save"
+msgstr "Salvesta"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteDescription.jsx:57
+msgid "Site description"
+msgstr "Saidi kirjeldus"
+
+#: app/AdminPageRouter.php:47
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/tasks/images/HelpCenterAIMarkup.jsx:216
+#: src/Assist/tasks/images/HelpCenterMarkup.jsx:237
+#: src/HelpCenter/tours/site-assistant.js:5
+#: src/HelpCenter/tours/site-assistant.js:126
+#: src/HelpCenter/tours/welcome.js:74
+msgid "Site Assistant"
+msgstr "Site Assistant"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:321
+msgid "We encountered a server error we cannot recover from. Please reload the page and try again."
+msgstr "Ilmnes serveri viga, mida ei ole võimalik käsitleda. Taaslae leht ja proovi uuesti."
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteDescription.jsx:69
+msgid "Enter a site description..."
+msgstr "Sisesta saidi kirjeldus..."
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteDescription.jsx:26
+msgid "Add site description"
+msgstr "Lisa saidi kirjeldus"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateLogo.jsx:13
+msgid "Upload site logo"
+msgstr "Laadi üles saidi logo"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: src/Assist/pages/parts/Header.jsx:52
+msgid "View site"
+msgstr "Vaata saiti"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteIcon.jsx:19
+msgid "Site icon"
+msgstr "Saidi ikoon"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateLogo.jsx:19
+msgid "Site logo"
+msgstr "Saidi logo"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteIcon.jsx:13
+msgid "Upload site icon"
+msgstr "Laadi üles saidi ikoon"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateSiteIcon.jsx:20
+msgid "Set site icon"
+msgstr "Määra saidi ikoon"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/tasks/UpdateLogo.jsx:20
+msgid "Set site logo"
+msgstr "Määra saidi logo"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/ImageUploader.jsx:149
+msgid "Remove image"
+msgstr "Eemalda pilt"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/ImageUploader.jsx:139
+msgid "Replace image"
+msgstr "Asenda pilt"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/ImageUploader.jsx:96
+msgid "Edit or update the image"
+msgstr "Muuda või uuenda pilti"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/components/Modal.jsx:37
+#: src/HelpCenter/components/tours/GuidedTour.jsx:308
+msgid "Close Modal"
+msgstr "Sulge modaalaken"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/buttons/DismissButton.jsx:16
+#: src/Assist/components/dashboard/LaunchCard.jsx:111
+msgid "Dismiss"
+msgstr "Loobu"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:58
+msgid "Select Site Pages"
+msgstr "Vali saidile lehed"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:31
+msgid "Select Site Goals"
+msgstr "Sea saidile eesmärgid"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:17
+#: src/Assist/components/dashboard/LaunchCard.jsx:26
+#: src/Assist/components/dashboard/LaunchCard.jsx:35
+#: src/Assist/components/dashboard/LaunchCard.jsx:44
+#: src/Assist/components/dashboard/LaunchCard.jsx:53
+msgid "Continue Building Your Website"
+msgstr "Jätka oma veebisaidi loomist"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: src/Assist/components/dashboard/LaunchCard.jsx:13
+#: src/Assist/tasks/site-builder-launcher.js:15
+#: src/Assist/tasks/site-builder-launcher.js:16
+msgid "Select Site Industry"
+msgstr "Vali saidi suunitlus"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:8
+msgid "Let's Start Building Your Website"
+msgstr "Alustame sinu veebisaidi loomist"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:49
+msgid "Select Site Design"
+msgstr "Vali saidile kujundus"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/components/PageControl.jsx:132
+msgid "Exit Launch"
+msgstr "Välju saidi käivitamisest"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:305
+msgid "Redirecting in 3, 2, 1..."
+msgstr "Ümbersuunamine 3, 2, 1..."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:304
+msgid "Your website has been created!"
+msgstr "Sinu veebisait on valmis!"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:300
+msgid "Setting up your Site Assistant"
+msgstr "Seadistame sinu saidi assistenti"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:161
+msgid "Starting off with a full website"
+msgstr "Alustame täieliku veebisaidiga"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:16
+msgid "Site Title"
+msgstr "Saidi pealkiri"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/HelpCenter/components/tours/GuidedTour.jsx:425
+#: src/Launch/components/PageControl.jsx:149
+msgid "Back"
+msgstr "Tagasi"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Assist/components/dashboard/LaunchCard.jsx:25
+#: src/Launch/pages/Goals.jsx:24
+msgid "Goals"
+msgstr "Eesmärgid"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:7
+msgid "Site Industry"
+msgstr "Saidi suunitlus"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/NeedsTheme.jsx:22
+msgid "Take me there"
+msgstr "Vii mind sinna"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/NeedsTheme.jsx:14
+msgid "Hey there, Launch is powered by Extendable and is required to proceed. You can install it from the link below and start over once activated."
+msgstr "Tere, Launch vajab tööks Extendable'i. Saad selle installida allolevalt lingilt ja pärast aktiveerimist protsessiga uuesti alustada."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/NeedsTheme.jsx:10
+msgid "One more thing before we start."
+msgstr "Veel üks asi enne, kui alustame."
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/svg/DesignLibraryMarkup.jsx:83
+msgid "Content"
+msgstr "Sisu"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/CreatingSite.jsx:71
+msgid "Site is not ready to launch."
+msgstr "Sait ei ole käivitamiseks valmis."
+
+#. translators: Launch is a noun.
+#: app/AdminPageRouter.php:60
+msgid "Launch"
+msgstr "Käivita"
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:3
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/HelpCenter/components/tours/GuidedTour.jsx:471
+#: src/Launch/components/PageControl.jsx:217
+msgid "Next"
+msgstr "Järgmine"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:52
+#: src/HelpCenter/tours/welcome.js:172
+msgid "Pages"
+msgstr "Lehed"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Assist/components/tasks/UpdateSiteDescription.jsx:48
+#: src/Launch/components/LoadingIndicator.jsx:5
+msgid "Loading..."
+msgstr "Laadimine..."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/components/RetryNotice.jsx:12
+msgid "Just a moment, this is taking longer than expected."
+msgstr "Üks hetk, see võtab oodatust kauem aega."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/HomeSelect.jsx:43
+msgid "You can personalize this later."
+msgstr "Saad seda hiljem kohandada."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/SiteInformation.jsx:34
+msgid "You can change this later."
+msgstr "Saad seda hiljem muuta."
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/SiteInformation.jsx:33
+msgid "What's the name of your new site?"
+msgstr "Mis on sinu uue saidi nimi?"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/components/SmallPreview.jsx:117
+#: src/Launch/pages/SiteStructure.jsx:94
+msgid "Press to select"
+msgstr "Vajuta valimiseks"
+
+#: public/build/extendify-launch-65a1cc2da04b0524875f.js:5
+#: src/Launch/pages/SiteInformation.jsx:84
+msgid "What's the name of your website?"
+msgstr "Mis on sinu veebisaidi nimi?"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:7
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:1
+#: src/Assist/tasks/images/HelpCenterAIMarkup.jsx:208
+#: src/Assist/tasks/images/HelpCenterMarkup.jsx:229
+#: src/Assist/tasks/open-design-library.js:6
+#: src/HelpCenter/tours/library-tour.js:6
+#: src/Library/components/MainButton.jsx:25
+msgid "Design Library"
+msgstr "Kujunduste kogu"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:1
+#: src/Assist/components/dashboard/LaunchCard.jsx:43
+msgid "Design"
+msgstr "Kujundus"
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:3
+#: src/Assist/components/dashboard/RecommendationCard.jsx:133
+msgid "Activating..."
+msgstr "Aktiveerimine..."
+
+#: public/build/extendify-assist-page-ae79be472b1afea99755.js:3
+#: src/Assist/components/dashboard/RecommendationCard.jsx:148
+msgid "Installing..."
+msgstr "Installimine..."
+
+#: public/build/extendify-help-center-b66147741b154c1d4958.js:1
+#: src/HelpCenter/components/modal/TopBar.jsx:105
+msgid "Go back"
+msgstr "Mine tagasi"
+
+#. Author URI of the plugin
+#: extendify.php
+msgid "https://extendify.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash"
+msgstr "https://extendify.com/?utm_source=wp-plugins&utm_campaign=author-uri&utm_medium=wp-dash"
+
+#. Plugin URI of the plugin
+#: extendify.php
+msgid "https://extendify.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash"
+msgstr "https://extendify.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash"
+
+#. Author of the plugin
+#: extendify.php
+msgid "Extendify"
+msgstr "Extendify"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:3
+#: src/Library/components/topbar/CloseButton.jsx:9
+msgid "Close"
+msgstr "Sulge"
+
+#: public/build/extendify-draft-14782d4ef6ac6c234d1b.js:1
+#: src/Draft/components/Input.jsx:73
+msgid "Submit"
+msgstr "Sisesta"
+
+#: public/build/extendify-library-3f334fc5f4be90d36095.js:3
+#: src/Library/components/sidebar/SiteTypeControl.jsx:49
+msgid "Site Type"
+msgstr "Saidi suunitlus"

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagasiside Süsteem</title>
+    <script type="module" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+    
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    
+        label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+            display: block;
+        }
+    
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        textarea {
+            resize: none;
+        }
+    
+        button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        .admin-panel {
+            margin-top: 30px;
+        }
+    
+        #toggleAdmin {
+            display: block;
+            margin: 20px auto;
+            background-color: #2196F3;
+            padding: 10px 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        #toggleAdmin:hover {
+            background-color: #1976D2;
+        }
+    
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        ul li {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    
+        ul li button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    
+        ul li button:hover {
+            background-color: #d32f2f;
+        }
+    
+        #averageRating, #feedbackCount {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>Tagasiside Süsteem</h1>
+
+    <!-- Tagasiside vorm -->
+    <div class="feedback-form">
+        <h2>Anna tagasisidet</h2>
+        <label for="rating">Hinne (1-5):</label>
+        <input type="number" id="rating" min="1" max="5" required>
+        <br><br>
+        <label for="comment">Kommentaar:</label><br>
+        <textarea id="comment" rows="4" cols="50"></textarea>
+        <br><br>
+        <button id="submitFeedback">Saada tagasiside</button>
+    </div>
+
+    <!-- Admin paneel -->
+    <div class="admin-panel" id="adminPanel">
+        <h2>Admin Paneel</h2>
+        <p><b>Keskmine hinne:</b> <span id="averageRating">-</span></p>
+        <p><b>Hindajate arv:</b> <span id="feedbackCount">-</span></p>
+        <ul id="feedbackList"></ul>
+    </div>
+
+    <button id="toggleAdmin">Näita Admin Paneeli</button>
+</body>
+</html>

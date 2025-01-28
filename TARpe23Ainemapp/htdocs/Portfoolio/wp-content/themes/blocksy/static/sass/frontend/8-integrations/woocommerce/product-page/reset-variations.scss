@@ -1,0 +1,27 @@
+.entry-summary-items {
+
+	table.variations {
+		
+		td {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+	}
+}
+
+table.variations {
+
+	.reset_variations {
+		background: transparent;
+		cursor: pointer;
+		visibility: hidden;
+		font-size: 14px;
+		color: var(--theme-text-color);
+
+		&:hover {
+			--theme-text-color: var(--theme-link-hover-color);
+		}
+	}
+}

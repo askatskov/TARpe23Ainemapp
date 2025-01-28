@@ -5,17 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waterfall</title>
 </head>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
 <body>
     <!-- pealkiri -->
     <h1>Waterfall ehk kosemudel</h1>
 
     <!-- kirjeldus -->
-<p>
-    Waterfall on üks esimesi tarkvara arenduse mudeleid tavaliste<br>
-    tootmisprotsesside eeskujul, kus iga etapp eelneb järgmisele. Tagasipöördumine eelmisesse<br>
-    on keeruline. Eelnevas etapis vea etapis vea avastmine, tähendab seda, et vea juurde saab tagasi <br>
-    pöörduda alles siis, kui tarkvara on kasutusse läinud.<br><br>
-</p>
-    
+    <p>
+        Waterfall on üks esimesi tarkvara arenduse mudeleid tavaliste<br>
+        tootmisprotsesside eeskujul, kus iga etapp eelneb järgmisele. Tagasipöördumine eelmisesse<br>
+        on keeruline. Eelnevas etapis vea avastamine, tähendab seda, et vea juurde saab tagasi <br>
+        põõrduda alles siis, kui tarkvara on kasutusse läinud.<br><br>
+    </p>
+    <!-- etapid ja nende kirjeldus -->
+     <p>
+        <ol>
+            <li>
+                <!-- esimene etapp -->
+                Etapp - Nõuete määratlemine:<br>
+                Selles etapis dokumenteeritakse arendatava toote/tarkvara/süsteemi nõuded, käitumine, <br>
+                sihtriistvara jms. mis on arendatava tarkvara taatlusliku funktsioneerimise tarbeks vajalikud. <br>
+                Vahest jaotatakse see etapp ka omakorda kaheks - Süsteemianalüüs ja Nõuete analüüs.<br><br>
+            </li>
+            <li>
+                <!-- teine etapp -->
+                Etapp - Süsteemi ja tarkvara kavandamine:<br>
+                Teises etapis kavandatakse arendusel olev süsteem ja tarkvara keskendudes nende põhilistele<br>
+                omadustele. Põhiomadusteks võivad olla: Andmestruktuurid, tarkvara arhitektuur, liidesed,<br>
+                liideste omadused ning protseduurilised ja algoritmilised detailid. Kavandamise tulemused<br>
+                dokumenteeritakse mille abil hinnatakse teostuse käigus projekti kvaliteet.<br><br>
+            </li>
+            <li>
+                <!-- kolmas etapp -->
+                Etapp - Teostus ning moodulite testimine:<br>
+                Eelnevalt dokumenteeritud kavandi järgi toimub kolmandas etapis tarkvara/süsteemi arendus.<br>
+                Arendustöö käigus arendatakse programm moodulhaaval või moodulite kogumikuna. Peale<br>
+                programmeerimist teostatakse moodulite ja kogumite testimised. Olenevalt eelnevalt <br>
+                dokumenteeritud kavandi detailsusest tuleneb selles etapis projekti arenduslihtsus.<br>
+                Mida rohkem detaile on kavandatud, seda lihtsam on arendustöö.<br><br>
+            </li>
+            <li>
+                <!-- neljas etapp -->
+                Etapp - Integratsioon ja süsteemi testimine:<br>
+                Toimub kogu tarkvarasüsteemi testimine. Peale testimist tarnitakse toode kliendile või<br>
+                kasutajate sihtrühmale. Testitakse sellest vaatepunktist kas süsteem teeb seda mis <br>
+                eelnevalt dokumenteeritud ning testitakse ka seda et süsteemis esinevad detailid on<br>
+                loogilised.<br><br>
+            </li>
+            <li>
+                <!-- viies etapp -->
+                Etapp - Kasutamine ja hooldus:<br>
+                Kõige pikem tarkvara elutsüklis olev etapp. Siin toimub vigade parandus, funktsionaalsuse<br>
+                muutmine, (kas siis kliendi, turu, keskkonna, või sihtrühma sisendi/vajadusena). Arendustöö<br>
+                teostamiseks korratakse kõiki eelmisi etappe, kuid siis ainult süsteemi muutmise eesmärgil,<br>
+                mitte enam nullist millegi uue arendamise jaoks.<br><br>
+            </li>
+            <!-- kokkuvõte -->
+        </ol>
+        Iga etapi tulemusena tekib dokument (kas siis üks või mitu) mis kirjeldab etapis saavutatud tulemit.<br>
+        Kõik dokumendid kinnitatakse. Järgmine etapp ei tohi olla samaaegselt töös kui eelmine pole lõpetatud <br>
+        Kuigi mingi ülekate siiski on, ning infot on võimalik edastada ühest etapist edasi teise.<br><br>
+
+        <!-- arendustsükli pilt -->
+        <img src="/arendustsyklid/0_c8pGrOdSIsxiy22F.png" alt="arendustsükli pilt">
+
+        <!-- tabel mis loetleb arendustsükli head ja vead -->
+        <table style="width:100%">
+            <tr>
+                <th>Head</th>
+                <th>Vead</th>
+            </tr>
+            <tr>
+                <td>Paindlikkus</td>
+                <td>Ettearvamatu</td>
+            </tr>
+            <tr>
+                <td>Kiirus; kiirem turulejõudmine</td>
+                <td>Keskendumine siin ja praegu</td>
+            </tr>
+            <tr>
+                <td>Vähendatud risk</td>
+                <td>Tugineb koostööle</td>
+            </tr>
+          </table>
+
+        allikad:
+        <a href="https://eoppearhiiv.edu.ee/e-kursused/eucip/arendus/1221_koskmudel.html"> EUCIP</a>
+    </p>  
 </body>
 </html>

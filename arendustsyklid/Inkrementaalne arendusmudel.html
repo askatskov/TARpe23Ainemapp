@@ -6,73 +6,78 @@
     <title>Inkrementaalne arendusmudel</title>
 </head>
 <style>
-    table, th, td {
-      border:1px solid black;
+    table {
+        border: 1px solid black;
+        width: 50%;
     }
-    </style>
+    th, td {
+        border: 1px solid black;
+    }
+</style>
 <body>
-    <!-- pealkiri -->
+    <!-- Pealkiri -->
     <h1>Inkrementaalne arendusmudel</h1>
 
-    <!-- kirjeldus -->
+    <!-- Kirjeldus -->
     <p>
-        Inkrementaalne arendus on etapiviisiline ja ajagraafikut järgiv strateegia,<br>
-        kus süsteemi erinevaid osi arendatakse erinevatel aegadel ja erineva kiirusega<br>
-        ning kui üks osa valmis saab, integreeritakse see juba valmis süsteemiga.<br><br>
+        Inkrementaalne arendusmudel on arengustrateegia, kus tarkvara arendamine<br>
+        toimub järk-järgult ja vastavalt kindlale ajakavale. Iga etapi jooksul arendatakse<br>
+        süsteemi teatud osa, mille valmisolekuga see integreeritakse juba olemasolevasse süsteemi.<br><br>
     </p>
 
-     <p>
+    <p>
         <ol>
             <li>
-                Nõuete analüüs: Inkrementaalse mudeli esimeses etapis tuvastab tooteanalüüsi ekspertiis nõuded.<br>
-                Ja süsteemi funktsionaalseid nõudeid mõistab nõuete analüüsi meeskond. Tarkvara arendamiseks inkrementaalse<br>
-                mudeli alusel täidab see etapp olulist rolli.<br><br>
+                Nõuete analüüs: Inkrementaalse mudeli esimeses etapis määratakse kindlaks<br>
+                süsteemi nõuded. Selle faasi eesmärgiks on mõista tarkvara funktsionaalsust ja<br>
+                tuvastada, milliseid omadusi süsteem peab omama.<br><br>
             </li>
             <li>
-                Disain ja arendus: Selles SDLC inkrementaalse mudeli etapis lõpetatakse süsteemi funktsionaalsuse<br>
-                kavandamine ja arendusmeetod edukalt. Kui tarkvara arendab uut praktilisust, kasutab inkrementaalne mudel<br>
-                stiili ja arendusfaasi.<br><br>
+                Disain ja arendus: Selles etapis keskendutakse süsteemi arhitektuuri kavandamisele<br>
+                ning arendamisprotsessi käivitamisele. Inkrementaalne mudel võimaldab uusi funktsioone<br>
+                lisada järjestikku, tehes iga osa arenduse lõpuleviimise järel süsteemi täiendavaks.<br><br>
             </li>
             <li>
-                Testimine: Inkrementaalse mudeli puhul kontrollitakse iga olemasoleva funktsiooni ja ka täiendava<br>
-                funktsionaalsuse toimivust. Testimisfaasis kasutatakse iga ülesande käitumise testimiseks erinevaid meetodeid.<br><br>
+                Testimine: Iga arendatud funktsioon testitakse, et kontrollida selle õiget toimimist.<br>
+                Iga lisatud osa on eelnevalt testitud ja kontrollitud, et tagada kogu süsteemi usaldusväärsus.<br><br>
             </li>
             <li>
-                Rakendamine: Rakendamisetapp võimaldab arendussüsteemi kodeerimise faasi. See hõlmab lõplikku kodeerimist,<br>
-                 mis toimub projekteerimis- ja arendusfaasis ning testib funktsionaalsust testimisfaasis. Pärast selle etapi<br>
-                lõpetamist täiustatakse ja ajakohastatakse toote tööarvu kuni lõpliku süsteemitooteni.<br><br>
+                Rakendamine: Rakendamise etapis toimub lõplik kodeerimine ja funktsionaalsuse testimine.<br>
+                Kui süsteem on valmis, viiakse läbi viimased testimised, enne kui süsteem on lõplikult kasutusele<br>
+                võetud ja täiustatud.<br><br>
             </li>
 
-            <!-- kokkuvõte -->
+            
         </ol>
-        Inkrementaalne arendusmudel on etappidena arenev strateegia, kus tarkvara arendatakse erinevates<br>
-        etappides ja süsteemi osi integreeritakse järk-järgult. Iga etapp keskendub spetsiifilistele ülesannetele<br>
-        nagu nõuete analüüs, disain, arendus, testimine ja rakendamine.<br><br>
+        Inkrementaalne arendusmudel põhineb järjestikustel etappidel, kus iga uus etapp<br>
+        täiendab eelnevat ja lisab süsteemi uusi funktsioone. Kõik etapid keskenduvad kindlate<br>
+        ülesannete täitmisele, sealhulgas nõuete määratlemine, süsteemi disainimine, tarkvara arendamine,<br>
+        testimine ja lõplik rakendamine.<br><br>
 
-        <!-- arendustsükli pilt -->
-        <img src="Hõiva.PNG" alt="arendustsükli pilt" width="500" height="auto">
+        <!-- Arendustsükli pilt -->
+        <img src="Hõiva.PNG" alt="Inkrementaalne arendus" width="500" height="auto">
 
-        <!-- tabel mis loetleb arendustsükli head ja vead -->
-        <table style="width:100%">
+        <!-- Tabel arendustsükli tugevuste ja nõrkuste kohta -->
+        <table>
             <tr>
-                <th>Head</th>
-                <th>Vead</th>
+                <th>Positiivsed küljed</th>
+                <th>Negatiivsed küljed</th>
             </tr>
             <tr>
-                <td>Kuulutused, mida tehakse kasutaja nõuete muutmise tõttu, vähenevad, uuesti tehtava analüüsi ja dokumentatsiooni hulk väheneb oluliselt võrreldes koskmudeliga.</td>
-                <td>Kergem on saada kliendi tagasisidet juba tehtud arendustööle - kliendid saavad anda kommentaare valminud osadele ja ka näevad, kui palju on tehtud. Sel viisil on esimesed süseteemi osad nagu prototüübid kogu süsteemile.</td>
+                <td>Pakub paindlikkust süsteemi arendamise käigus, kuna klient saab iga etapi lõpus tagasisidet ja süsteemi juba toimiva osa.</td>
+                <td>Kuna süsteem areneb järk-järgult, võib olla keeruline kogu projekti kulude ja ajakava jälgimine.</td>
             </tr>
             <tr>
-                <td>Progress ei ole hästi jälgitav - haldurid vajavad pidevalt materjale progressi mõõtmiseks. Kiire arenduse korral ei ole tasuv tekitada dokumente iga pisikese versioonimuudatuse jaoks.</td>
-                <td>Süsteemi struktuur kipub halvebena uute osade lisandumisel - pidev muutmine rikub süsteemi struktuuri. Selle vältimiseks ja tarkvara kvaliteedi parandamiseks on vaja kuulutada lisaks aega ja raha refaktoreerimisele. Halb struktuur muudab tarkvarahilisema muutmise keerulisemaks ja kulukamaks.</td>
+                <td>Igast osast saadakse klientide tagasiside, mis aitab tagada, et süsteem vastab täpselt nende vajadustele.</td>
+                <td>Üksikute osade pidev täiustamine võib viia süsteemi struktuuri nõrgenemiseni, mis muudab tuleviku muudatused keeruliseks ja kalliks.</td>
             </tr>
             <tr>
-                <td>Kliendile on võimalik kiiremini tarnida ja evitada loodavat tarkvara - kliendid võivad saada süsteemist reaalset kasu varem, kui see oleks võimalik koskmudeliga</td>
-                <td></td>
+                <td>Kiirem toote tarnimine, kuna iga inkrement annab võimaluse tarnida töötav osa süsteemist varem kui traditsioonilistes mudelites.</td>
+                <td>Kuna muutused tehakse pidevalt, võib see põhjustada ebamugavusi või vigu süsteemi hilisemates osades.</td>
             </tr>
-          </table>
+        </table>
 
-        allikad:
+        Allikad:
         <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html"> EUCIP</a>,
         <a href="https://www.javatpoint.com/software-engineering-incremental-model"> Javatpoint</a>
     </p>  

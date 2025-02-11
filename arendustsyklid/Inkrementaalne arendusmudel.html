@@ -6,12 +6,146 @@
     <title>Inkrementaalne arendusmudel</title>
 </head>
 <style>
-    table {
-        border: 1px solid black;
-        width: 50%;
+    :root {
+        --calm-gold: #BFA06E;
+        --calm-purple: #A17E9C;
+        --calm-blue: #7890A1;
+        --main-bg: radial-gradient(circle at top left, #1C2B3A, #2A2E3A);
+        --glass-bg: rgba(255, 255, 255, 0.07);
+        --glass-border: rgba(255, 255, 255, 0.1);
     }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: var(--main-bg);
+        color: #EEE;
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+        text-align: left;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        margin: 40px 0;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background: linear-gradient(45deg, var(--calm-gold), var(--calm-purple));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+        backdrop-filter: blur(10px);
+        background: var(--glass-bg);
+        border-radius: 20px;
+        border: 1px solid var(--glass-border);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    ol {
+        counter-reset: item;
+        padding: 20px;
+        list-style: none;
+    }
+
+    ol li {
+        position: relative;
+        font-size: 1.2em;
+        padding: 20px 20px 20px 50px;
+        margin: 10px 0;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 3px solid var(--calm-gold);
+        counter-increment: item;
+        transition: transform 0.2s ease;
+    }
+
+    ol li::before {
+        content: counter(item);
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+        color: var(--calm-gold);
+        font-weight: 600;
+    }
+
+    ol li:hover {
+        transform: translateX(10px);
+    }
+
+    table {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(5px);
+        border: 2px solid var(--calm-blue);
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 30px auto;
+    }
+
     th, td {
-        border: 1px solid black;
+        padding: 15px;
+        text-align: center;
+    }
+
+    th {
+        background: linear-gradient(45deg, #1E3C72, #2A5298);
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    td {
+        transition: background 0.2s ease;
+    }
+
+    td:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    img {
+        max-width: 100%;
+        border: 2px solid var(--calm-gold);
+        border-radius: 15px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    img:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 15px var(--calm-blue);
+    }
+
+    a {
+        color: var(--calm-gold);
+        text-decoration: none;
+        position: relative;
+        transition: color 0.2s ease;
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background: var(--calm-blue);
+        transition: width 0.2s ease;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        h1 { font-size: 2.5em; }
+        .content-wrapper { padding: 20px; }
     }
 </style>
 <body>
@@ -20,39 +154,48 @@
 
     <!-- Kirjeldus -->
     <p>
-        Inkrementaalne arendusmudel on arengustrateegia, kus tarkvara arendamine<br>
-        toimub järk-järgult ja vastavalt kindlale ajakavale. Iga etapi jooksul arendatakse<br>
-        süsteemi teatud osa, mille valmisolekuga see integreeritakse juba olemasolevasse süsteemi.<br><br>
+        Inkrementaalne arendusmudel on arengustrateegia, kus tarkvara arendamine toimub<br>
+        järk-järgult ja vastavalt kindlale ajakavale. Iga etapi jooksul<br>
+        arendatakse süsteemi teatud osa, mille valmisolekuga see integreeritakse juba olemasolevasse süsteemi.<br><br>
     </p>
 
     <p>
+        Inkrementaalne arendusmudel on arengustrateegia, kus tarkvara arendamine toimub<br>
+        järk-järgult ja vastavalt kindlale ajakavale. Iga etapi jooksul<br>
+        arendatakse süsteemi teatud osa, mille valmisolekuga see integreeritakse<br>
+        juba olemasolevasse süsteemi.<br><br>
+    </p>
+    
+    <p>
         <ol>
             <li>
-                Nõuete analüüs: Inkrementaalse mudeli esimeses etapis määratakse kindlaks<br>
-                süsteemi nõuded. Selle faasi eesmärgiks on mõista tarkvara funktsionaalsust ja<br>
-                tuvastada, milliseid omadusi süsteem peab omama.<br><br>
+                Nõuete analüüs: Inkrementaalse mudeli esimeses etapis määratakse<br>
+                kindlaks süsteemi nõuded. Selle faasi eesmärgiks on mõista tarkvara<br>
+                funktsionaalsust ja tuvastada, milliseid omadusi süsteem peab omama.<br><br>
             </li>
             <li>
-                Disain ja arendus: Selles etapis keskendutakse süsteemi arhitektuuri kavandamisele<br>
-                ning arendamisprotsessi käivitamisele. Inkrementaalne mudel võimaldab uusi funktsioone<br>
-                lisada järjestikku, tehes iga osa arenduse lõpuleviimise järel süsteemi täiendavaks.<br><br>
+                Disain ja arendus: Selles etapis keskendutakse süsteemi arhitektuuri<br>
+                kavandamisele ning arendamisprotsessi käivitamisele. Inkrementaalne<br>
+                mudel võimaldab uusi funktsioone lisada järjestikku, tehes iga osa<br>
+                arenduse lõpuleviimise järel süsteemi täiendavaks.<br><br>
             </li>
             <li>
-                Testimine: Iga arendatud funktsioon testitakse, et kontrollida selle õiget toimimist.<br>
-                Iga lisatud osa on eelnevalt testitud ja kontrollitud, et tagada kogu süsteemi usaldusväärsus.<br><br>
+                Testimine: Iga arendatud funktsioon testitakse, et kontrollida selle<br>
+                õiget toimimist. Iga lisatud osa on eelnevalt testitud ja kontrollitud,<br>
+                et tagada kogu süsteemi usaldusväärsus.<br><br>
             </li>
             <li>
-                Rakendamine: Rakendamise etapis toimub lõplik kodeerimine ja funktsionaalsuse testimine.<br>
-                Kui süsteem on valmis, viiakse läbi viimased testimised, enne kui süsteem on lõplikult kasutusele<br>
-                võetud ja täiustatud.<br><br>
+                Rakendamine: Rakendamise etapis toimub lõplik kodeerimine ja<br>
+                funktsionaalsuse testimine. Kui süsteem on valmis, viiakse läbi viimased<br>
+                testimised, enne kui süsteem on lõplikult kasutusele võetud ja täiustatud.<br><br>
             </li>
-
-            
         </ol>
-        Inkrementaalne arendusmudel põhineb järjestikustel etappidel, kus iga uus etapp<br>
-        täiendab eelnevat ja lisab süsteemi uusi funktsioone. Kõik etapid keskenduvad kindlate<br>
-        ülesannete täitmisele, sealhulgas nõuete määratlemine, süsteemi disainimine, tarkvara arendamine,<br>
-        testimine ja lõplik rakendamine.<br><br>
+        <p>Inkrementaalne arendusmudel põhineb järjestikustel etappidel, kus iga uus etapp<br>
+        täiendab eelnevat ja lisab süsteemi uusi funktsioone. Kõik etapid keskenduvad<br>
+        kindlate ülesannete täitmisele, sealhulgas nõuete määratlemine, süsteemi<br>
+        disainimine, tarkvara arendamine, testimine ja lõplik rakendamine.<br><br></p>
+    </p>
+    
 
         <!-- Arendustsükli pilt -->
         <img src="Hõiva.PNG" alt="Inkrementaalne arendus" width="500" height="auto">

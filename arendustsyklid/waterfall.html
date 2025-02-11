@@ -3,76 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waterfall</title>
+    <title>Waterfall Model</title>
+    <style>
+        :root {
+            --calm-gold: #BFA06E;
+            --calm-purple: #A17E9C;
+            --calm-blue: #7890A1;
+            --main-bg: radial-gradient(circle at top left, #1C2B3A, #2A2E3A);
+            --glass-bg: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--main-bg);
+            color: #EEE;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            text-align: left;
+            overflow-x: hidden;
+        }
+    
+        h1 {
+            font-size: 3.5em;
+            margin: 40px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, var(--calm-gold), var(--calm-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+    
+        ol {
+            counter-reset: item;
+            padding: 20px;
+            list-style: none;
+        }
+    
+        ol li {
+            position: relative;
+            font-size: 1.2em;
+            padding: 20px 20px 20px 50px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid var(--calm-gold);
+            counter-increment: item;
+            transition: transform 0.2s ease;
+        }
+    
+        ol li::before {
+            content: counter(item);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: var(--calm-gold);
+            font-weight: 600;
+        }
+    
+        ol li:hover {
+            transform: translateX(10px);
+        }
+    
+        table {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(5px);
+            border: 2px solid var(--calm-blue);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 30px auto;
+        }
+    
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+    
+        th {
+            background: linear-gradient(45deg, #1E3C72, #2A5298);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    
+        td {
+            transition: background 0.2s ease;
+        }
+    
+        td:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    
+        img {
+            max-width: 100%;
+            border: 2px solid var(--calm-gold);
+            border-radius: 15px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+    
+        img:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 15px var(--calm-blue);
+        }
+    
+        a {
+            color: var(--calm-gold);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+    
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: var(--calm-blue);
+            transition: width 0.2s ease;
+        }
+    
+        a:hover::after {
+            width: 100%;
+        }
+    
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .content-wrapper { padding: 20px; }
+        }
+    </style>
 </head>
-<style>
-    table {
-        border: 1px solid black;
-        width: 30%;
-    }
-    th, td {
-        border: 1px solid black;
-    }
-</style>
 <body>
-    <!-- pealkiri -->
     <h1>Waterfall ehk kosemudel</h1>
-
-    <!-- kirjeldus -->
     <p>
-        Waterfall on üks esimesi tarkvara arenduse mudeleid tavaliste<br>
-        tootmisprotsesside eeskujul, kus iga etapp eelneb järgmisele. Tagasipöördumine eelmisesse<br>
-        on keeruline. Eelnevas etapis vea avastamine, tähendab seda, et vea juurde saab tagasi <br>
-        põõrduda alles siis, kui tarkvara on kasutusse läinud.<br><br>
-    </p>
-    <!-- etapid ja nende kirjeldus -->
-     <p>
         <ol>
             <li>
                 <!-- esimene etapp -->
                 Etapp - Nõuete määratlemine:<br>
-                Selles etapis dokumenteeritakse arendatava toote/tarkvara/süsteemi nõuded, käitumine, <br>
-                sihtriistvara jms. mis on arendatava tarkvara taatlusliku funktsioneerimise tarbeks vajalikud. <br>
-                Vahest jaotatakse see etapp ka omakorda kaheks - Süsteemianalüüs ja Nõuete analüüs.<br><br>
+                Selles etapis dokumenteeritakse arendatava toote/tarkvara/süsteemi nõuded,<br>
+                käitumine, sihtriistvara jms. mis on arendatava tarkvara taatlusliku<br>
+                funktsioneerimise tarbeks vajalikud. Vahest jaotatakse see etapp ka omakorda<br>
+                kaheks - Süsteemianalüüs ja Nõuete analüüs.<br><br>
             </li>
             <li>
                 <!-- teine etapp -->
                 Etapp - Süsteemi ja tarkvara kavandamine:<br>
-                Teises etapis kavandatakse arendusel olev süsteem ja tarkvara keskendudes nende põhilistele<br>
-                omadustele. Põhiomadusteks võivad olla: Andmestruktuurid, tarkvara arhitektuur, liidesed,<br>
-                liideste omadused ning protseduurilised ja algoritmilised detailid. Kavandamise tulemused<br>
-                dokumenteeritakse mille abil hinnatakse teostuse käigus projekti kvaliteet.<br><br>
+                Teises etapis kavandatakse arendusel olev süsteem ja tarkvara keskendudes<br>
+                nende põhilistele omadustele. Põhiomadusteks võivad olla: Andmestruktuurid,<br>
+                tarkvara arhitektuur, liidesed, liideste omadused ning protseduurilised ja<br>
+                algoritmilised detailid. Kavandamise tulemused dokumenteeritakse mille abil<br>
+                hinnatakse teostuse käigus projekti kvaliteet.<br><br>
             </li>
             <li>
                 <!-- kolmas etapp -->
                 Etapp - Teostus ning moodulite testimine:<br>
-                Eelnevalt dokumenteeritud kavandi järgi toimub kolmandas etapis tarkvara/süsteemi arendus.<br>
-                Arendustöö käigus arendatakse programm moodulhaaval või moodulite kogumikuna. Peale<br>
-                programmeerimist teostatakse moodulite ja kogumite testimised. Olenevalt eelnevalt <br>
-                dokumenteeritud kavandi detailsusest tuleneb selles etapis projekti arenduslihtsus.<br>
-                Mida rohkem detaile on kavandatud, seda lihtsam on arendustöö.<br><br>
+                Eelnevalt dokumenteeritud kavandi järgi toimub kolmandas etapis tarkvara/süsteemi<br>
+                arendus. Arendustöö käigus arendatakse programm moodulhaaval või moodulite<br>
+                kogumikuna. Peale programmeerimist teostatakse moodulite ja kogumite testimised.<br>
+                Olenevalt eelnevalt dokumenteeritud kavandi detailsusest tuleneb selles etapis<br>
+                projekti arenduslihtsus. Mida rohkem detaile on kavandatud, seda lihtsam on arendustöö.<br><br>
             </li>
             <li>
                 <!-- neljas etapp -->
                 Etapp - Integratsioon ja süsteemi testimine:<br>
-                Toimub kogu tarkvarasüsteemi testimine. Peale testimist tarnitakse toode kliendile või<br>
-                kasutajate sihtrühmale. Testitakse sellest vaatepunktist kas süsteem teeb seda mis <br>
+                Toimub kogu tarkvarasüsteemi testimine. Peale testimist tarnitakse toode kliendile<br>
+                või kasutajate sihtrühmale. Testitakse sellest vaatepunktist kas süsteem teeb seda mis<br>
                 eelnevalt dokumenteeritud ning testitakse ka seda et süsteemis esinevad detailid on<br>
                 loogilised.<br><br>
             </li>
             <li>
                 <!-- viies etapp -->
                 Etapp - Kasutamine ja hooldus:<br>
-                Kõige pikem tarkvara elutsüklis olev etapp. Siin toimub vigade parandus, funktsionaalsuse<br>
-                muutmine, (kas siis kliendi, turu, keskkonna, või sihtrühma sisendi/vajadusena). Arendustöö<br>
-                teostamiseks korratakse kõiki eelmisi etappe, kuid siis ainult süsteemi muutmise eesmärgil,<br>
-                mitte enam nullist millegi uue arendamise jaoks.<br><br>
+                Kõige pikem tarkvara elutsüklis olev etapp. Siin toimub vigade parandus,<br>
+                funktsionaalsuse muutmine, (kas siis kliendi, turu, keskkonna, või sihtrühma<br>
+                sisendi/vajadusena). Arendustöö teostamiseks korratakse kõiki eelmisi etappe,<br>
+                kuid siis ainult süsteemi muutmise eesmärgil, mitte enam nullist millegi uue<br>
+                arendamise jaoks.<br><br>
             </li>
             <!-- kokkuvõte -->
         </ol>
-        Iga etapi tulemusena tekib dokument (kas siis üks või mitu) mis kirjeldab etapis saavutatud tulemit.<br>
-        Kõik dokumendid kinnitatakse. Järgmine etapp ei tohi olla samaaegselt töös kui eelmine pole lõpetatud <br>
+        <p>Iga etapi tulemusena tekib dokument (kas siis üks või mitu)<br>
+        mis kirjeldab etapis saavutatud tulemit. Kõik dokumendid kinnitatakse.<br>
+        Järgmine etapp ei tohi olla samaaegselt töös kui eelmine pole lõpetatud<br>
         Kuigi mingi ülekate siiski on, ning infot on võimalik edastada ühest etapist edasi teise.<br><br>
+        </p>    
 
         <!-- arendustsükli pilt -->
         <img src="0_c8pGrOdSIsxiy22F.png" alt="arendustsükli pilt" width="1000" height="600">

@@ -46,13 +46,13 @@
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
         }
     
-        ul {
+        ol {
             counter-reset: item;
             padding: 20px;
             list-style: none;
         }
     
-        ul li {
+        ol li {
             position: relative;
             font-size: 1.2em;
             padding: 20px 20px 20px 50px;
@@ -63,7 +63,7 @@
             transition: transform 0.2s ease;
         }
     
-        ul li::before {
+        ol li::before {
             content: counter(item);
             position: absolute;
             left: 15px;
@@ -74,7 +74,7 @@
             font-weight: 600;
         }
     
-        ul li:hover {
+        ol li:hover {
             transform: translateX(10px);
         }
     
@@ -151,14 +151,48 @@
 <body>
     <h1>DevOps</h1>
     
-    <p></p>
+    <p>DevOps on tarkvaraarenduse lähenemisviis, mis rõhutab koostööd ja<br>
+        suhtlust arendus- (Dev) ja operatsioonimeeskondade (Ops) vahel. Selle<br>
+        eesmärk on lühendada tarkvaraarenduse elutsüklit ning parandada tarkvaraväljaannete<br>
+        kvaliteeti ja töökindlust.<br><br>
+    </p>
+    <img src="DevOps.PNG" alt="DevOps" width="500" height="auto"><br>
     
     <p>
+        <h2>7 C-d DevOpsi</h2>
         <ol>
             <li>
+                Pidev areng
+            </li>
+            
+            <li>
+                Pidev integreerimine
+            </li>
+                        
+            <li>
+                Pidev testimine
+            </li>
+                        
+            <li>
+                Pidev juurutamine / pidev kohaletoimetamine
+            </li>
+                        
+            <li>
+                Pidev jälgimine
+            </li>
+                        
+            <li>
+                Pidev tagasiside
+            </li>
 
+            <li>
+                Pidevad toimingud
             </li>
         </ol>
+        <img src="DevOps1.PNG" alt="DevOps" width="500" height="auto"><br>
+        Allikad: 
+
+        <a href="https://www.geeksforgeeks.org/introduction-to-devops/"> GeeksforGeeks</a>
     </p>
 </body>
 </html>

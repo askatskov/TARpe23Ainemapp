@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V-Shape</title>
+    <title>Continuous test-driven development</title>
     <style>
         :root {
             --calm-gold: #D4AF37;
@@ -146,78 +146,53 @@
             h1 { font-size: 2.5em; }
             .content-wrapper { padding: 20px; }
         }
-
     </style>
 </head>
 <body>
-    <h1>V-Shape</h1>
-    
-    <p>V-mudel on teatud tüüpi SDLC mudel, kus protsess toimub järjestikku V-kujuliselt. </p>
-    <h2>V-mudeli disain</h2>
+    <h1>CTDD</h1>
     <p>
-        <ol>
-            <li>
-                Nõuete kogumine ja analüüs: V-mudeli esimene faas on
-                nõuete kogumine ja selle analüüs.
-            </li>
-            <li>
-                Disain
-            </li>
-            <li>
-                Rakendamine: ehitatakse tarkvara disainist lähtuvalt.
-            </li>
-            <li>
-                Testimine: Testimise etapis tesitakse tarkvara, et see vastaks 
-                kliendi nõudmistele ja oleks kvaliteetne.
-            </li>
-            <li>
-                Tarkvara kasutusele võtt
-            </li>
-            <li>
-                Hooldus: hooldusfaasis hooldatakse tarkvara, et see vastaks jätkuvalt
-                kliendi vajadustele.
-            </li>
-            <li>
-                V-mudelit kasutatakse sageli ohutuses: kriitilistes süsteemides, nagu lennundus-
-                ja kaitsesüsteemid, kuna see paneb rõhku põhjalikule testimisele 
-                ja suudab selgelt määratleda tarkvaraarenduse protsessi etapid. 
-            </li>
-        </ol>
-        <img src="V-Shape.PNG" alt="DevOps" width="500" height="auto">
-
-        <p>
-            V-mudel on tarkvaraarenduse elutsükli (SDLC) mudel, mis laiendab
-            veekoskmudelit, rõhutades testimist igas arendusetapis. See on jäik
-            ja hästi struktureeritud, kus iga arendusetapp vastab kindlale testimisfaasile.
-        </p>
-
-        <table>
-            <tr>
-                <th>Positiivsed küljed</th>
-                <th>Negatiivsed küljed</th>
-            </tr>
-            <tr>
-                <td>See on väga distsiplineeritud mudel ja faasid viiakse läbi ükshaaval.</td>
-                <td>Suur risk ja ebakindlus.</td>
-            </tr>
-            <tr>
-                <td>V-mudelit kasutatakse väikeste projektide jaoks, kus projekti nõuded on selged.</td>
-                <td>See ei sobi keerukate ja objektorienteeritud projektide jaoks.</td>
-            </tr>
-            <tr>
-                <td>Lihtne ja hõlpsasti mõistetav ja kasutatav.</td>
-                <td>Aeganõudev: V-mudel võib olla aeganõudev, kuna see nõuab palju dokumentatsiooni ja testimist.</td>
-            </tr>
-            <tr>
-                <td>See võimaldab projektijuhtimisel edenemist täpselt jälgida.</td>
-                <td>Liigne tuginemine dokumentatsioonile: V-mudel paneb suurt rõhku dokumenteerimisele, mis võib viia dokumentatsiooni liigsele sõltuvusele tegeliku arendustöö arvelt.</td>
-            </tr>
-        </table>
-
-        
-        Allikad: 
-
-        <a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/#vmodel-design"> GeeksforGeeks</a>
+        Pidev testipõhine arendus (CTDD) on tarkvaraarenduse tava, mis laiendab testipõhist arendust (TDD) automaatse testide teostamise abil taustal, mida mõnikord nimetatakse pidevaks testimiseks.
     </p>
+        <ol>
+            <li>Arendaja kirjutab esmalt väikese testi, mis ebaõnnestub, kuna funktsionaalsus pole veel olemas.</li>
+            <li>Koodi kirjutatakse minimaalselt nii palju, et test saaks edukalt läbi minna.</li>
+            <li>Automaatne testimissüsteem käivitab testid pidevalt ja annab kohe tagasisidet koodi seisukorra kohta.</li>
+            <li>Vead või regressioonid avastatakse varakult ja neid parandatakse kohe, mis vähendab defektide kuhjumist.</li>
+        </ol>
+    <h2>CASE</h2>
+    <p><b>GitHub </b><br>
+        GitHub Actions võimaldab sul seadistada automaatseid töövooge, mis jooksutavad teste iga kord, kui kood muutub (push, pull request vms).</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Head</th>
+                    <th>Vead</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lihtne ja intuitiivne Gherkini keele toega kasutajaliides</td>
+                    <td>Piiratud offline töövõime, peamiselt pilvepõhine</td>
+                </tr>
+                <tr>
+                    <td>Hea koostööärikeskkond äripoolte ja arendajate vahel</td>
+                    <td>Kui projekt kasvab väga suureks, võib haldus muutuda keerukaks</td>
+                </tr>
+                <tr>
+                    <td>Tugev integreeritus populaarsete testiraamistikega (Cucumber, SpecFlow)</td>
+                    <td>Lisafunktsioonid võivad vajada kallimaid tellimustasemeid</td>
+                </tr>
+                <tr>
+                    <td>Automaatsete testide jooksutamine ja aruandlus otse platvormil</td>
+                    <td>Õppimiskõver neile, kes pole Gherkini või BDD-ga varem kokku puutunud</td>
+                </tr>
+                <tr>
+                    <td>Versioonihaldus ja ajalugu spetsiifikatsioonide muutustest</td>
+                    <td>Piiratud integratsioon mõne spetsiifilise CI/CD tööriistaga (võrreldes avatud lähtekoodiga lahendustega)</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    <a href="https://www.geeksforgeeks.org/acceptance-test-driven-development-atdd-in-software-engineering/">GeeksforGeeks</a>
 </body>
 </html>

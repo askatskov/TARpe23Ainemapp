@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain-driven design</title>
+    <style>
+        :root {
+            --calm-gold: #D4AF37;
+            --calm-purple: #8B5FBF;
+            --calm-blue: #4B0082;
+            --main-bg: radial-gradient(circle at top left, rgba(0, 0, 0, 0.9), rgba(28, 28, 28, 0.8), rgba(0, 0, 0, 0.9));
+            --glass-bg: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--main-bg);
+            color: #EEE;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            text-align: left;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 40px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, var(--calm-gold), var(--calm-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        ol {
+            counter-reset: item;
+            padding: 20px;
+            list-style: none;
+        }
+
+        ol li {
+            position: relative;
+            font-size: 1.2em;
+            padding: 20px 20px 20px 50px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid var(--calm-gold);
+            counter-increment: item;
+            transition: transform 0.2s ease;
+        }
+
+        ol li::before {
+            content: counter(item);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: var(--calm-gold);
+            font-weight: 600;
+        }
+
+        ol li:hover {
+            transform: translateX(10px);
+        }
+
+        table {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(5px);
+            border: 2px solid var(--calm-purple);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 30px auto;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background: linear-gradient(45deg, var(--calm-purple), var(--calm-gold));
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        td {
+            transition: background 0.2s ease;
+        }
+
+        td:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            border: 2px solid var(--calm-gold);
+            border-radius: 15px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        img:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 15px var(--calm-purple);
+        }
+
+        a {
+            color: var(--calm-gold);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: var(--calm-purple);
+            transition: width 0.2s ease;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .content-wrapper { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Domain-driven design</h1>
+    <p>
+        
+    </p>
+        <img src="" alt="DDD" width="500" height="auto">
+    <ol>
+        <li>
+            
+        </li>
+        <li>
+            
+        </li>
+        <li>
+           
+        </li>
+        <li>
+            
+        </li>
+    </ol>
+    <h2>CASE</h2>
+    <p><b></b><br>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    <a href=""></a>
+</body>
+</html>

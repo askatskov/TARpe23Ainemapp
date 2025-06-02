@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design-driven Development: Hea ja Vead</title>
+    <style>
+        :root {
+            --calm-gold: #D4AF37;
+            --calm-purple: #8B5FBF;
+            --calm-blue: #4B0082;
+            --main-bg: radial-gradient(circle at top left, rgba(0, 0, 0, 0.9), rgba(28, 28, 28, 0.8), rgba(0, 0, 0, 0.9));
+            --glass-bg: rgba(255, 255, 255, 0.07);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--main-bg);
+            color: #EEE;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            text-align: left;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 40px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: linear-gradient(45deg, var(--calm-gold), var(--calm-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            background: var(--glass-bg);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        ol {
+            counter-reset: item;
+            padding: 20px;
+            list-style: none;
+        }
+
+        ol li {
+            position: relative;
+            font-size: 1.2em;
+            padding: 20px 20px 20px 50px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid var(--calm-gold);
+            counter-increment: item;
+            transition: transform 0.2s ease;
+        }
+
+        ol li::before {
+            content: counter(item);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: var(--calm-gold);
+            font-weight: 600;
+        }
+
+        ol li:hover {
+            transform: translateX(10px);
+        }
+
+        table {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(5px);
+            border: 2px solid var(--calm-purple);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 30px auto;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background: linear-gradient(45deg, var(--calm-purple), var(--calm-gold));
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        td {
+            transition: background 0.2s ease;
+        }
+
+        td:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            border: 2px solid var(--calm-gold);
+            border-radius: 15px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        img:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 15px var(--calm-purple);
+        }
+
+        a {
+            color: var(--calm-gold);
+            text-decoration: none;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: var(--calm-purple);
+            transition: width 0.2s ease;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .content-wrapper { padding: 20px; }
+        }
+
+        .good, .bad {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .good {
+            border-left: 5px solid #D4AF37;
+        }
+
+        .bad {
+            border-left: 5px solid #FF6347;
+        }
+
+        .good h3, .bad h3 {
+            margin-top: 0;
+        }
+
+        .good p, .bad p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Design-driven development</h1>
+    <p>
+        Design-driven development (DDD) on lähenemine, kus arenduse ja disaini protsessid on tihedalt seotud. Arendajad ja disainerid töötavad üheskoos, et luua kasutajasõbralikke ja visuaalselt meeldivaid tooteid. Eesmärgiks on tagada, et lõpptootes oleksid ühendatud kõrge kvaliteedi, funktsionaalsuse ja kasutajakogemuse parimad aspektid. DDD aitab vältida disaini ja arenduse vahelisi lõhesid ning soodustab meeskonnatööd, tagades, et toode vastab kasutaja vajadustele ja ootustele.
+    </p>
+    
+        <img src="" alt="DDD" width="500" height="auto">
+    <ol>
+        <li>
+            Kasutajauuringud 
+        </li>
+        <li>
+            Nõue
+        </li>
+        <li>
+            Disaini ja ideestamise etapp
+        </li>
+        <li>
+            Prototyping ja kasutajate testimine disain
+        </li>
+        <li>
+            Disaini käegalöömine ja arendamine
+        </li>
+        <li>
+            Iteratiivne tagasiside aas
+        </li>
+        <li>
+            käivitage ja iterate
+        </li>
+    </ol>
+    <h2>CASE</h2>
+    <p><b></b><br>
+        </p>
+
+    <h2>Design-driven Development: Hea ja Vead</h1>
+
+
+        <h2>Hea</h2>
+        <div class="good">
+            <h3>1. Parandatud kasutajakogemus (UX)</h3>
+            <p>Disain ja arendus töötavad koos, et pakkuda sujuvat ja intuitiivset kasutajakogemust, mis tagab paremad tulemused.</p>
+        </div>
+        <div class="good">
+            <h3>2. Kasutajakeskne lähenemine</h3>
+            <p>Kuna disainerid ja arendajad töötavad tihedalt koos, on lõpptooted rohkem kohandatud kasutaja vajadustele ja ootustele.</p>
+        </div>
+        <div class="good">
+            <h3>3. Kiirem ja täpsem arendus</h3>
+            <p>Kui disain ja arendus algavad samal ajal, saab toote arendamise protsessi kiirendada ja probleemid lahendada juba varases faasis.</p>
+        </div>
+        <div class="good">
+            <h3>4. Koostööd ja suhtlus</h3>
+            <p>Edendab tiimide koostööd ja parandab suhtlemist, mis viib paremate ideede ja lahendusteni.</p>
+        </div>
+        <div class="good">
+            <h3>5. Kohandatud disain ja uuenduslikud lahendused</h3>
+            <p>Disainerite osalemine arendusprotsessis tagab loomingulised ja kohandatud lahendused, mis ületavad tavalised arenduse piirangud.</p>
+        </div>
+
+        <h2>Vead</h2>
+        <div class="bad">
+            <h3>1. Suurem ajakulu alguses</h3>
+            <p>Disaini ja arenduse tihe koostöö võib alguses võtta rohkem aega, kuna tuleb teha põhjalikke ettevalmistusi ja planeeringuid.</p>
+        </div>
+        <div class="bad">
+            <h3>2. Disaini ja arenduse vaheline konflikti risk</h3>
+            <p>Kui suhtlus on kehv, võib tekkida arusaamatusi, kus arendajad ja disainerid ei pruugi olla ühel lainel, mis võib toote kvaliteeti mõjutada.</p>
+        </div>
+        <div class="bad">
+            <h3>3. Kallis ja ajamahukas protsess</h3>
+            <p>Kuna DDD nõuab pidevat suhtlust ja tiimide koostööd, võib see projektide puhul osutuda kalliks ja aeganõudvaks.</p>
+        </div>
+        <div class="bad">
+            <h3>4. Prototüübi arendamise keerukus</h3>
+            <p>Prototüüpide arendamine võib olla keeruline ja ajamahukas, kuna arendajad ei pruugi alati mõista täpselt disaini nõudmisi.</p>
+        </div>
+        <div class="bad">
+            <h3>5. Ebatäpne toote määratlus</h3>
+            <p>Kui disain ja arendus ei ole õigesti koordineeritud, võib lõpptootest saada midagi, mis ei vasta kasutaja ootustele või ei tööta praktikas hästi.</p>
+        </div>
+
+
+</body>
+</html>

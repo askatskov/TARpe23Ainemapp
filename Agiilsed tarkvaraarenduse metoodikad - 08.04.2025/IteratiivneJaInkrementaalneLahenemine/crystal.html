@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Method</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #eee;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            margin: 20px 0 40px 0;
+        }
+        th, td {
+            border: 1px solid #8B5FBF;
+            padding: 10px 15px;
+            text-align: left;
+            background-color: #1E1E1E;
+        }
+        th {
+            background-color: #8B5FBF;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        ul {
+            max-width: 900px;
+            padding-left: 20px;
+        }
+        p {
+            max-width: 900px;
+        }
+        code {
+            background-color: #222;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #D4AF37;
+            font-family: monospace;
+        }
+        .note {
+            font-style: italic;
+            color: #bbb;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Crystal Meetod ja eEduka Projekt</h1>
+
+    <h2>1. Mis on Crystal-meetod?</h2>
+    <p>
+        Crystal on <strong>kergekaaluline agiilne arendusraamistik</strong>, mis keskendub inimestele ja nendevahelisele suhtlusele. See meetod ei määra ette kindlaid tööriistu, vaid kohandub vastavalt projekti ja tiimi vajadustele. Crystal on osa agiilsetest SDLC mudelitest, eriti sobiv väikestele kuni keskmise suurusega meeskondadele.
+    </p>
+    <p>Crystal põhineb kahel põhiideel:</p>
+    <ol>
+        <li>Leia enda tiimile sobiv viis töötamiseks.</li>
+        <li>Tee iga projekt eriliseks ja paindlikuks.</li>
+    </ol>
+
+    <h2>2. Ajalugu</h2>
+    <p>
+        Meetodi töötas välja <strong>Alistair Cockburn</strong>, kes IBM-is keskendus arendusprotsesside inimkesksele ja paindlikule tööle, mitte jäikadele etappidele. Eesmärk on parandada koostööd, kommunikatsiooni ja usaldust tiimiliikmete vahel.
+    </p>
+
+    <h2>3. Crystal’i omadused</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Omadus</th>
+                <th>Kirjeldus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Sage tarnimine</strong></td><td>Tarkvara tarnitakse regulaarselt ja varakult.</td></tr>
+            <tr><td><strong>Peegelduv areng</strong></td><td>Tiimid analüüsivad pidevalt oma tööviise ja täiustavad neid.</td></tr>
+            <tr><td><strong>Osmootne kommunikatsioon</strong></td><td>Info levib loomulikult, kui tiim töötab koos.</td></tr>
+            <tr><td><strong>Isiklik turvalisus</strong></td><td>Igaüks saab vabalt ideid jagada ilma hukkamõistuta.</td></tr>
+            <tr><td><strong>Fookus</strong></td><td>Iga liige teab oma rolli ja ülesannet.</td></tr>
+            <tr><td><strong>Ligipääs ekspertidele</strong></td><td>Kasutajate tagasiside aitab suunda hoida.</td></tr>
+            <tr><td><strong>Tehnilised tööriistad</strong></td><td>Spetsiaalsed tööriistad testimiseks ja haldamiseks.</td></tr>
+            <tr><td><strong>Pidev õppimine</strong></td><td>Uute oskuste omandamine ja rakendamine.</td></tr>
+            <tr><td><strong>Meeskonnatöö</strong></td><td>Koostöö ja vastastikune toetus on olulised.</td></tr>
+            <tr><td><strong>Ajalimiidid (timeboxing)</strong></td><td>Ajaliselt piiratud iteratsioonid.</td></tr>
+            <tr><td><strong>Iteratiivne arendus</strong></td><td>Töötav tarkvara valmib järk-järgult.</td></tr>
+            <tr><td><strong>Automatiseeritud testimine</strong></td><td>Bugid avastatakse kiiresti.</td></tr>
+            <tr><td><strong>Kliendi kaasamine</strong></td><td>Klient on osa arendusprotsessist.</td></tr>
+            <tr><td><strong>Juhtimine</strong></td><td>Tiimiliikmed võtavad ise vastutuse ja teevad otsuseid.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>4. Crystal "värviperekond"</h2>
+    <p>Crystal koosneb mitmest variandist, mis sobivad erineva suuruse ja keerukusega meeskondadele:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Variant</th>
+                <th>Meeskonna suurus</th>
+                <th>Kirjeldus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Crystal Clear</td><td>1–6 inimest</td><td>Väikesed, lühiajalised projektid ühes ruumis.</td></tr>
+            <tr><td>Crystal Yellow</td><td>7–20</td><td>Kaasatakse kasutajate tagasiside ja automaattestid.</td></tr>
+            <tr><td>Crystal Orange</td><td>21–40</td><td>Funktsioonipõhised tiimid, kestus kuni 2 aastat.</td></tr>
+            <tr><td>Crystal Orange Web</td><td>21–40</td><td>Avalikus kasutuses olev arendusplatvorm, pidevad iteratsioonid.</td></tr>
+            <tr><td>Crystal Red</td><td>40–80</td><td>Suuremad süsteemid, eraldi funktsionaalsed tiimid.</td></tr>
+            <tr><td>Crystal Maroon</td><td>80–200</td><td>Väga suur projekt, individuaalne meetodite kohandamine.</td></tr>
+            <tr><td>Crystal Diamond/Sapphire</td><td>200+ inimest</td><td>Spetsiaalsed lähenemised suurte organisatsioonide jaoks.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>5. eEduka projekti sobivus Crystal meetodiga</h2>
+    <p>
+        eEduka on kooli haldusprojekt, kus kasutatakse enamasti arvuti- ja veebipõhiseid lahendusi. Tiimi suurus ja projekti ulatus on keskmise suurusega, mistõttu sobib hästi Crystal Orange või Crystal Clear variandid, mis võimaldavad paindlikkust ja kiiret tagasisidet.
+    </p>
+    <p>Projekti omadused, mis toetavad Crystal kasutamist:</p>
+    <ul>
+        <li>Meeskond on suhteliselt väike ja tihe.</li>
+        <li>Arendus toimub iteratiivselt, võimaldades varajast testimist ja parandusi.</li>
+        <li>Suhtlus on tihe ning klient (kool või kasutajad) on pidevalt kaasatud.</li>
+        <li>Fookus on selge ja rollid on hästi jaotatud.</li>
+    </ul>
+
+    <h2>6. Crystal meetodi rakendamine eEduka projektis</h2>
+    <h3>Valitud variandid ja põhjendus</h3>
+    <p>
+        Kuna tiim on alla 10 liikme, sobib <strong>Crystal Clear</strong> varianti järgida, mis rõhutab lihtsust, kiiret kommunikatsiooni ja väikeseid iteratsioone. Vajadusel võib kasutada mõningaid <strong>Crystal Yellow</strong> elemente, nagu automaattestid.
+    </p>
+
+    <h3>Tiimi elementide kohandamine</h3>
+    <ul>
+        <li>Tiimi liikmete rollid on paindlikud ja igaühel on oma vastutusala.</li>
+        <li>Suhtlus toimub peamiselt näost-näkku, aga ka digitaalsete tööriistade abil.</li>
+        <li>Tagasisidet kogutakse regulaarselt kasutajatest ja kooli personalilt.</li>
+        <li>Automaattestide ja pideva integreerimisega tagatakse koodi kvaliteet.</li>
+    </ul>
+
+    <h3>Riskide juhtimine</h3>
+    <p>
+        Kuigi Crystal meetod on paindlik ja inimkeskne, on oluline tähele panna võimalikke riske:
+    </p>
+    <ul>
+        <li>Kommunikatsiooni puudujäägid võivad põhjustada arusaamatusi.</li>
+        <li>Tiimi liikmete oskuste erinevused võivad mõjutada töö efektiivsust.</li>
+        <li>Klientide kaasamise ebaregulaarne toimimine võib vähendada lõpptulemuse kvaliteeti.</li>
+    </ul>
+
+    <h2>7. Ajakava ja rollid eEduka projektis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll</th>
+                <th>Kirjeldus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Projekti juht</td><td>Korraldab tiimi tööd ja hoiab suhtlust kliendiga.</td></tr>
+            <tr><td>Arendajad</td><td>Kirjutavad ja testivad koodi, osalevad disainis.</td></tr>
+            <tr><td>Testijad</td><td>Tagavad kvaliteedi ja automatiseeritud testide läbiviimise.</td></tr>
+            <tr><td>Kasutajatugi/klient</td><td>Andmed tagasiside ja vajaduste kohta.</td></tr>
+        </tbody>
+    </table>
+
+        <h2>Visuaalne diagramm</h2>
+
+    <ol>
+        <li><img src="crystal.jpg"></li>
+    </ol>
+
+    <h2>8. Kokkuvõte</h2>
+    <p>
+        Crystal meetod on sobiv ja paindlik raamistik eEduka projekti jaoks, eriti arvestades selle inimkeskset lähenemist ja iteratiivset tööd. Tiimi väiksem suurus ja projekti olemus võimaldavad kasutada Crystal Clear või Yellow varianti, mis aitab tagada kiire arenduse, kvaliteetse koostöö ja lõppkasutajale sobiva tulemuse.
+    </p>
+
+</body>
+</html>

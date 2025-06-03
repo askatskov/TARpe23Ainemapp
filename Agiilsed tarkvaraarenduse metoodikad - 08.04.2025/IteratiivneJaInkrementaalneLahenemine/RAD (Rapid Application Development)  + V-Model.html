@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Õpilasinfo Süsteem: RAD ja V-Model</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #eee;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            margin: 20px 0 40px 0;
+        }
+        th, td {
+            border: 1px solid #8B5FBF;
+            padding: 10px 15px;
+            text-align: left;
+            background-color: #1E1E1E;
+        }
+        th {
+            background-color: #8B5FBF;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        ul {
+            max-width: 900px;
+            padding-left: 20px;
+        }
+        p {
+            max-width: 900px;
+        }
+        code {
+            background-color: #222;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #D4AF37;
+            font-family: monospace;
+        }
+        .note {
+            font-style: italic;
+            color: #bbb;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Õpilasinfo Süsteem koolile: RAD ja V-Model</h1>
+
+    <h2>1. Projektikirjeldus</h2>
+    <p>
+        Süsteem võimaldab:
+    </p>
+    <ul>
+        <li>Õpetajatel hallata õpilaste andmeid (nimi, hinded, puudumised)</li>
+        <li>Õpilastel vaadata oma infot (ainult lugemine)</li>
+        <li>Adminil lisada/kustutada kasutajaid</li>
+    </ul>
+
+    <h2>2. RAD-protsessi visualiseerimise juhend</h2>
+    <p>
+        Joonista RAD-etapid järgmiselt:
+    </p>
+    <ul>
+        <li><strong>Ärianalüüs:</strong> Vajaduste kaardistamine, mida süsteem peab tegema</li>
+        <li><strong>Prototüüpimine:</strong> Esimese töötava mudeli loomine</li>
+        <li><strong>Kasutaja tagasiside:</strong> Kasutajate arvamuste kogumine prototüübi kohta</li>
+        <li><strong>Iteratiivne täiustamine:</strong> Prototüübi parendamine vastavalt tagasisidele</li>
+        <li><strong>Lõpptoode:</strong> Valmis süsteem, mis vastab kasutajate ootustele</li>
+    </ul>
+    <p class="note">
+        Tagasiside toimub prototüüpimise ja iteratiivse täiustamise vahel — nooled peaksid seda selgelt näitama.
+    </p>
+
+    <h2>3. V-Model visualiseerimise juhend</h2>
+    <p>
+        Joonista V-mudel järgmiselt:
+    </p>
+    <ul>
+        <li><strong>Vasak pool (allikas vasakult üles):</strong> Nõuete analüüs, Süsteemi disain, Arhitektuuri disain, Detaildisain</li>
+        <li><strong>Parempool (allikas paremalt üles):</strong> Üksustestimine (Unit Testing), Integratsioonitestimine, Süsteemikatsetus, Aktseptatsioonitestimine</li>
+        <li><strong>V-mudeli keskpunkt:</strong> Süsteemi integreerimine ja katsetamine</li>
+    </ul>
+
+    <h2>4. RAD vs V-Model võrdlustabel</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Kriteerium</th>
+                <th>RAD</th>
+                <th>V-Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lähtekoht</td>
+                <td>Kiire prototüüpimine ja kasutajaga koostöö</td>
+                <td>Detailne nõuete ja disaini määratlus enne arendust</td>
+            </tr>
+            <tr>
+                <td>Testimise hetk</td>
+                <td>Testimine toimub pidevalt iteratsioonides</td>
+                <td>Testimine järgneb rangelt arendusfaasidele vastavalt</td>
+            </tr>
+            <tr>
+                <td>Muudatuste võimalus</td>
+                <td>Paindlik, muudatusi saab kiiresti sisse viia</td>
+                <td>Muudatused on keerulised ja kallid hilisemates faasides</td>
+            </tr>
+            <tr>
+                <td>Sobivus kiirele MVP-le</td>
+                <td>Väga hea sobivus kiireks MVP loomisega</td>
+                <td>Ei sobi hästi kiireks MVP arenduseks</td>
+            </tr>
+            <tr>
+                <td>Riskitase</td>
+                <td>Suurem risk nõuete ebatäpsuse tõttu, aga kiire tagasiside aitab riske vähendada</td>
+                <td>Madalam risk tänu rangetele etappidele ja testimisele</td>
+            </tr>
+            <tr>
+                <td>Klientide kaasamine</td>
+                <td>Klient on aktiivselt kaasatud kogu protsessi vältel</td>
+                <td>Klient kaasatakse peamiselt nõuete ja aktseptatsioonitesti faasis</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Otsus ja põhjendus</h2>
+    <p>
+        Selle konkreetse õpilasinfo süsteemi puhul eelistaksin <strong>RAD meetodit</strong>, kuna projekt nõuab kiiret tagasisidet ja kasutajakeskset arengut, mis aitab vältida arusaamatusi ning kohandada lahendust reaalsetele vajadustele. RAD võimaldab kiirelt luua prototüübi ja teha muudatusi vastavalt koolipersonali ning õpilaste ootustele. V-Model sobib paremini projektidele, kus nõuded on selged ja muutumatud ning rõhk on rangetel testidel, kuid selle projekti puhul on paindlikkus tähtsam.
+    </p>
+
+    <h2>6. Protsessikaart enda projektile</h2>
+    <p>
+        Minu arendusprotsess ühendab RAD-i kiire prototüüpimise ja iteratiivse tagasisidega ning V-mudeli struktureeritud testimise. 
+        <ul>
+            <li><strong>Võtan RAD-ist:</strong> varajane prototüüp, kasutajate aktiivne kaasamine ja iteratiivsed täiustused.</li>
+            <li><strong>Võtan V-mudelist:</strong> selgelt defineeritud testimise faasid ja kvaliteedikontrolli meetodid igas arendusetapis.</li>
+        </ul>
+        See protsess algab kiirest ärinõuete kogumisest ja prototüüpimisest, millele järgneb kasutajate tagasiside ja täiustused. Seejärel toimub põhjalikum disain ja arendus, millele lisandub etappidepõhine testimine (üksuse-, integratsiooni- ja süsteemitestid) enne lõplikku süsteemiintegreerimist ja aktseptatsioonikatsetust.
+    </p>
+
+    <h2>7. Õppematerjalide leidmine ja analüüs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Metoodika</th>
+                <th>Allika pealkiri</th>
+                <th>Link</th>
+                <th>Valiku põhjendus</th>
+                <th>Õpitav sisu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>RAD</td>
+                <td>Rapid Application Development Model - GeeksforGeeks</td>
+                <td><a href="https://www.geeksforgeeks.org/software-engineering-rapid-application-development-model-rad/" target="_blank" rel="noopener noreferrer">Link</a></td>
+                <td>Selge ja põhjalik ülevaade RAD-st, sobib kiireks sissejuhatuseks.</td>
+                <td>RAD põhietapid, eelised ja puudused ning kasutusvaldkonnad.</td>
+            </tr>
+            <tr>
+                <td>V-Model</td>
+                <td>Software Engineering SDLC - V-Model - GeeksforGeeks</td>
+                <td><a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/" target="_blank" rel="noopener noreferrer">Link</a></td>
+                <td>Hea struktuur ja selgitus, mis aitab mõista V-mudeli erinevaid faase.</td>
+                <td>V-mudeli etapid, testimise ja arenduse seosed, praktilised näited.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

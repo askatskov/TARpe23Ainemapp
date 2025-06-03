@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteratiivne/Inkrementaalne lähenemine</title>
+        <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #eee;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            margin: 20px 0 40px 0;
+        }
+        th, td {
+            border: 1px solid #8B5FBF;
+            padding: 10px 15px;
+            text-align: left;
+            background-color: #1E1E1E;
+        }
+        th {
+            background-color: #8B5FBF;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        ul {
+            max-width: 900px;
+            padding-left: 20px;
+        }
+        p {
+            max-width: 900px;
+        }
+        code {
+            background-color: #222;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #D4AF37;
+            font-family: monospace;
+        }
+        .note {
+            font-style: italic;
+            color: #bbb;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inkrementaalne arendusmudel</h1>
+   
+        <p>
+            Inkrementaalne arendusmudel on arengustrateegia, kus tarkvara arendamine toimub
+            järk-järgult ja vastavalt kindlale ajakavale. Iga etapi jooksul
+            arendatakse süsteemi teatud osa, mille valmisolekuga see integreeritakse
+            juba olemasolevasse süsteemi.
+        </p>
+        
+        <p>
+            <ol>
+                <li>
+                    Nõuete analüüs: Inkrementaalse mudeli esimeses etapis määratakse
+                    kindlaks süsteemi nõuded. Selle faasi eesmärgiks on mõista tarkvara
+                    funktsionaalsust ja tuvastada, milliseid omadusi süsteem peab omama.
+                </li>
+                <li>
+                    Disain ja arendus: Selles etapis keskendutakse süsteemi arhitektuuri
+                    kavandamisele ning arendamisprotsessi käivitamisele. Inkrementaalne
+                    mudel võimaldab uusi funktsioone lisada järjestikku, tehes iga osa
+                    arenduse lõpuleviimise järel süsteemi täiendavaks.
+                </li>
+                <li>
+                    Testimine: Iga arendatud funktsioon testitakse, et kontrollida selle
+                    õiget toimimist. Iga lisatud osa on eelnevalt testitud ja kontrollitud,
+                    et tagada kogu süsteemi usaldusväärsus.
+                </li>
+                <li>
+                    Rakendamine: Rakendamise etapis toimub lõplik kodeerimine ja
+                    funktsionaalsuse testimine. Kui süsteem on valmis, viiakse läbi viimased
+                    testimised, enne kui süsteem on lõplikult kasutusele võetud ja täiustatud.
+                </li>
+            </ol>
+            <p>Inkrementaalne arendusmudel põhineb järjestikustel etappidel, kus iga uus etapp
+            täiendab eelnevat ja lisab süsteemi uusi funktsioone. Kõik etapid keskenduvad
+            kindlate ülesannete täitmisele, sealhulgas nõuete määratlemine, süsteemi
+            disainimine, tarkvara arendamine, testimine ja lõplik rakendamine.</p>
+        </p>
+        
+
+            <img src="Hõiva.PNG" alt="Inkrementaalne arendus" width="500" height="auto">
+
+            <table>
+                <tr>
+                    <th>Positiivsed küljed</th>
+                    <th>Negatiivsed küljed</th>
+                </tr>
+                <tr>
+                    <td>Pakub paindlikkust süsteemi arendamise käigus, kuna klient saab iga etapi lõpus tagasisidet ja süsteemi juba toimiva osa.</td>
+                    <td>Kuna süsteem areneb järk-järgult, võib olla keeruline kogu projekti kulude ja ajakava jälgimine.</td>
+                </tr>
+                <tr>
+                    <td>Igast osast saadakse klientide tagasiside, mis aitab tagada, et süsteem vastab täpselt nende vajadustele.</td>
+                    <td>Üksikute osade pidev täiustamine võib viia süsteemi struktuuri nõrgenemiseni, mis muudab tuleviku muudatused keeruliseks ja kalliks.</td>
+                </tr>
+                <tr>
+                    <td>Kiirem toote tarnimine, kuna iga inkrement annab võimaluse tarnida töötav osa süsteemist varem kui traditsioonilistes mudelites.</td>
+                    <td>Kuna muutused tehakse pidevalt, võib see põhjustada ebamugavusi või vigu süsteemi hilisemates osades.</td>
+                </tr>
+            </table>
+
+            Allikad:
+            <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html"> EUCIP</a>,
+            <a href="https://www.javatpoint.com/software-engineering-incremental-model"> Javatpoint</a>
+        </p>  
+
+        <h1>Iteratiivne arendusmudel</h1>
+
+        <p>
+            Iteratiivne arendusmudel on arengustrateegia, kus tarkvara arendus toimub
+            korduvalt läbi iteratsioonide, kus iga iteratsioon annab võimaluse
+            süsteemi täiendada ja parandada varasemate kogemuste põhjal.
+        </p>
+
+        <p>
+            <ol>
+                <li>
+                    Nõuete analüüs ja planeerimine: Esimese iteratsiooni alguses määratletakse
+                    süsteemi põhinõuded. Selles etapis koostatakse esmased spetsifikatsioonid ja
+                    määratakse kindlaks arenduse prioriteedid, et alustada iteratiivselt töötamist.
+                </li>
+                <li>
+                    Disain ja prototüüpimine: Järgmisena kavandatakse süsteemi arhitektuur ning luuakse
+                    esmased prototüübid. Iga iteratsiooni jooksul arendatakse ja täiustatakse
+                    süsteemi arhitektuuri ning lisatakse uusi komponente, võimaldades varajast
+                    tagasisidet kasutajatelt.
+                </li>
+                <li>
+                    Arendus ja testimine: Iga iteratsioon hõlmab arendust, testimist ja
+                    vigade parandamist. Uue funktsionaalsuse lisamise järel viiakse läbi põhjalikud
+                    testimised, et tagada süsteemi usaldusväärsus ja stabiilsus.
+                </li>
+                <li>
+                    Tagasiside ja täiustamine: Iteratsiooni lõpus kogutakse kasutajatelt ja klientidelt
+                    tagasisidet, mille alusel tehakse vajalikud muudatused. See iteratiivne
+                    lähenemine võimaldab süsteemi pidevat täiustamist ja kohandamist vastavalt
+                    muutuvatele nõudmistele.
+                </li>
+            </ol>
+            <p>Iteratiivne arendusmudel põhineb korduval lähenemisel, kus iga iteratsioon annab
+            võimaluse süsteemi parandada ja täiendada eelneva kogemuse põhjal. Kõik etapid
+            keskenduvad pidevale tagasisidele, analüüsile, tarkvara arendamisele ja parendamisele, et
+            saavutada lõplikult stabiilne ja kvaliteetne süsteem.</p>
+            </p>
+
+
+            <img src="Iterative.avif" alt="Iteratiivne arendus" width="500" height="auto">
+
+            <table>
+                <tr>
+                    <th>Positiivsed küljed</th>
+                    <th>Negatiivsed küljed</th>
+                </tr>
+                <tr>
+                    <td>Võimaldab pidevat tagasisidet ja parendamist, mida saab kasutada järgmiste iteratsioonide planeerimisel.</td>
+                    <td>Iteratsioonide korduvalt korduv protsess võib viia pikema arendustsükli ja ressursinõudliku projektini.</td>
+                </tr>
+                <tr>
+                    <td>Varased prototüübid võimaldavad klientidel ja kasutajatel näha süsteemi arengut ja teha täpsemaid muudatusi.</td>
+                    <td>Kuna süsteem areneb järk-järgult, võib olla keeruline säilitada üldise arhitektuuri ühtsust.</td>
+                </tr>
+                <tr>
+                    <td>Pidev testimine tagab, et iga uue versiooni lisandväärused on kontrollitud ja vastavad nõuetele.</td>
+                    <td>Iteratiivne lähenemine võib põhjustada korduvat töö ja mõningase segaduse, kui varasemad vigadest saadud kogemused ei vii üldse lõpliku lahenduseni.</td>
+                </tr>
+            </table>
+
+            Allikad:
+            <a href="https://en.wikipedia.org/wiki/Iterative_and_incremental_development">Wikipedia</a>
+
+            </p>
+            <h1>Inkrementaalse ja Iteratiivse vahe</h1>
+            <p>
+                <ol>
+                    <p><strong>Iteratiivne arendus</p></strong>
+                    <li>
+                        Fookus on täiustamisel.
+                    </li>
+                    <li>
+                        Alustad millegi lihtsaga (prototüüp, toorversioon) ja parandad/lihvid seda iga iteratsiooniga.
+                    </li>
+                    <li>
+                        Eesmärk on õppida, katsetada ja kasutajate tagasisidet arvestades teha järjest paremaid versioone
+                    </li>
+                    <li>
+                        Näide: Loome lihtsa rakenduse, mis ainult kuvab nimekirja. Järgmises iteratsioonis lisame võimaluse nimekirja muuta. Siis sorteerimine. Siis otsing. Iga iteratsioon teeb olemasoleva funktsiooni paremaks.
+                    </li>
+                </ol>
+                <ol>
+                    <p><strong>Inkrementaalne arendus</p></strong>
+                    <li>
+                        Fookus on uue funktsionaalsuse lisamisel.
+                    </li>
+                    <li>
+                        Alustad väikese osa süsteemiga ja lisad uusi osi samm-sammult.
+                    </li>
+                    <li>
+                        Iga uus inkrement tähendab uut funktsionaalsust, mis võiks olla iseseisvalt kasutatav.
+                    </li>
+                    <li>
+                        Näide: Esmalt loome kasutajate sisselogimise. Siis lisame profiililehe. Siis sõnumite saatmise. Iga uus osa on uus tükk (inkrement), mis laiendab süsteemi võimekust.
+                    </li>
+                </ol>
+            </p>
+
+            <table>
+                <tr>
+                    <th>Mõiste</th>
+                    <th>Kuidas ehitatakse?</th>
+                    <th>Millele keskendub?</th>
+                </tr>
+                <tr>
+                    <td>Iteratiivne</td>
+                    <td>Sama asja parandatakse korduvalt</td>
+                    <td>Kvaliteedi/täiustamisele</td>
+                </tr>
+                <tr>
+                    <td>Inkrementaalne</td>
+                    <td>Lisatakse uusi osi/funktsioone</td>
+                    <td>Kasutatava mahu kasvatamisele</td>
+                </tr>
+            </table>
+        </p>  
+    </body>
+</html>

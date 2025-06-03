@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative/Incremental Approach</title>
+        <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #eee;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            margin: 20px 0 40px 0;
+        }
+        th, td {
+            border: 1px solid #8B5FBF;
+            padding: 10px 15px;
+            text-align: left;
+            background-color: #1E1E1E;
+        }
+        th {
+            background-color: #8B5FBF;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        ul {
+            max-width: 900px;
+            padding-left: 20px;
+        }
+        p {
+            max-width: 900px;
+        }
+        code {
+            background-color: #222;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #D4AF37;
+            font-family: monospace;
+        }
+        .note {
+            font-style: italic;
+            color: #bbb;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Incremental Development Model</h1>
+   
+    <p>
+        The incremental development model is a strategy where 
+        software is developed gradually and according to a 
+        fixed schedule. During each phase, a part of the 
+        system is developed and integrated into the already 
+        existing system.
+    </p>
+    
+    <p>
+        <ol>
+            <li>
+                Requirements Analysis: In the first stage of the incremental 
+                model, system requirements are defined. The goal of this 
+                phase is to understand the software's functionality and 
+                identify what features the system must have.
+            </li>
+            <li>
+                Design and Development: This phase focuses on designing the 
+                system architecture and initiating the development process. 
+                The incremental model allows new features to be added
+                sequentially, making each finished part a functional 
+                addition to the system.
+            </li>
+            <li>
+                Testing: Each developed function is tested to ensure it works 
+                correctly. Every added part is tested and verified beforehand 
+                to ensure the system's reliability.
+            </li>
+            <li>
+                Implementation: In the implementation phase, final coding 
+                and functionality testing are performed. Once the system is 
+                ready, final tests are conducted before the system is fully 
+                deployed and enhanced.
+            </li>
+        </ol>
+        <p> The incremental development model is based on sequential 
+            stages, where each new stage builds upon the previous one 
+            and adds new features to the system. All stages focus on 
+            specific tasks, including requirement definition, system 
+            design, software development, testing, and final 
+            implementation.</p>
+    </p>
+
+    <img src="Hõiva.PNG" alt="Incremental Development" width="500" height="auto">
+
+    <table>
+        <tr>
+            <th>Positive Aspects</th>
+            <th>Negative Aspects</th>
+        </tr>
+        <tr>
+            <td>Offers flexibility during development, as the client receives feedback and a functional part of the system at the end of each phase.</td>
+            <td>Since the system evolves gradually, tracking total project costs and timelines can be difficult.</td>
+        </tr>
+        <tr>
+            <td>Client feedback is obtained from each part, helping ensure the system meets their exact needs.</td>
+            <td>Constant refinement of parts can weaken system structure, making future changes complex and expensive.</td>
+        </tr>
+        <tr>
+            <td>Faster product delivery, as each increment allows a working part of the system to be delivered earlier than in traditional models.</td>
+            <td>Continuous changes may cause issues or bugs in later parts of the system.</td>
+        </tr>
+    </table>
+
+    Sources:
+    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1222_inkrementaalne_arendusmudel.html"> EUCIP</a>,
+    <a href="https://www.javatpoint.com/software-engineering-incremental-model"> Javatpoint</a>
+
+    <h1>Iterative Development Model</h1>
+
+    <p>
+        The iterative development model is a strategy where 
+        software development occurs repeatedly through iterations, 
+        where each iteration allows enhancement and improvement 
+        based on previous experience.
+    </p>
+
+    <p>
+        <ol>
+            <li>
+                Requirements Analysis and Planning: At the beginning of the 
+                first iteration, core system requirements are defined. Initial 
+                specifications are created, and development priorities are 
+                set to start working iteratively.
+            </li>
+            <li>
+                Design and Prototyping: Next, the system architecture is 
+                designed, and early prototypes are created. During each
+                iteration, the architecture is developed and improved, 
+                and new components are added, allowing for early user 
+                feedback.
+            </li>
+            <li>
+                Development and Testing: Each iteration includes development, 
+                testing, and bug fixing. After adding new functionality, 
+                thorough testing is conducted to ensure system reliability 
+                and stability.
+            </li>
+            <li>
+                Feedback and Improvement: At the end of the iteration, 
+                feedback is collected from users and clients, based on 
+                which necessary changes are made. This iterative approach 
+                enables continuous improvement and adjustment of the 
+                system to meet changing requirements.
+            </li>
+        </ol>
+        <p> The iterative development model is based on a repeated 
+            approach, where each iteration allows improving and enhancing 
+            the system based on prior experience. All phases focus on 
+            constant feedback, analysis, software development, and 
+            refinement to ultimately achieve a stable and high-quality 
+            system.</p>
+    </p>
+
+    <img src="Iterative.avif" alt="Iterative Development" width="500" height="auto">
+
+    <table>
+        <tr>
+            <th>Positive Aspects</th>
+            <th>Negative Aspects</th>
+        </tr>
+        <tr>
+            <td>Enables continuous feedback and improvement, which can be used for planning future iterations.</td>
+            <td>Repeated iteration cycles may result in a longer development cycle and require more resources.</td>
+        </tr>
+        <tr>
+            <td>Early prototypes allow clients and users to see system progress and suggest precise changes.</td>
+            <td>As the system evolves gradually, maintaining a consistent overall architecture can be difficult.</td>
+        </tr>
+        <tr>
+            <td>Continuous testing ensures that each version's new additions are verified and meet the requirements.</td>
+            <td>Iterative development may lead to repeated work and confusion if earlier mistakes don't lead to effective final solutions.</td>
+        </tr>
+    </table>
+
+    Sources:
+    <a href="https://en.wikipedia.org/wiki/Iterative_and_incremental_development">Wikipedia</a>
+
+    <p><strong>Difference Between Incremental and Iterative<p></strong>
+    <p>
+        <ol>
+            <p><strong>Iterative Development<p></strong>
+            <li>
+                Focus is on improvement.
+            </li>
+            <li>
+                You start with something simple (a prototype, 
+                rough version) and improve/refine it with each 
+                iteration.
+            </li>
+            <li>
+                The goal is to learn, experiment, and produce 
+                increasingly better versions based on user feedback.
+            </li>
+            <li>
+                Example: We build a simple app that only displays 
+                a list. In the next iteration, we add the ability 
+                to edit the list. Then sorting. Then search. Each 
+                iteration improves the existing functionality.
+            </li>
+        </ol>
+        <ol>
+            <p><strong>Incremental Development<p></strong>
+            <li>
+                Focus is on adding new functionality.
+            </li>
+            <li>
+                You start with a small part of the 
+                system and gradually add new parts step-by-step.
+            </li>
+            <li>
+                Each new increment means new functionality that could 
+                be used independently.
+            </li>
+            <li>
+                Example: First, we create user login. Then we 
+                add a profile page. Then messaging. Each new 
+                part is a new piece (increment) that expands 
+                the system's capabilities.
+            </li>
+        </ol>
+    </p>
+
+    <table>
+        <tr>
+            <th>Concept</th>
+            <th>How it's built</th>
+            <th>What it focuses on</th>
+        </tr>
+        <tr>
+            <td>Iterative</td>
+            <td>The same thing is improved repeatedly</td>
+            <td>On quality/improvement</td>
+        </tr>
+        <tr>
+            <td>Incremental</td>
+            <td>New parts/functions are added</td>
+            <td>On growing usable scope</td>
+        </tr>
+    </table>
+</body>
+</html>

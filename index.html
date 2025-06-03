@@ -1,170 +1,299 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artjom Skatškov 2024</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            display: flex;
-            background-color: #121212;
-            padding: 20px;
-            justify-content: center;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Artjom Skatškov 2024</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    font-family: 'Lora', serif;
+    background: #f4e1d2;
+    color: #2b1c10;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-        .container {
-            background: #1e1e1e;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.15);
-            width: 40%;
-            transition: transform 0.3s ease-in-out;
-        }
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-        }
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-        a:hover {
-            color: #c7b866;
-        }
-        li {
-            color:#ffffff
-        }
+  header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #6e493a;
+    margin-bottom: 8px;
+  }
 
+  header p {
+    font-style: italic;
+    font-weight: 500;
+    color: #987284;
+    font-size: 1.2rem;
+  }
 
+  .profile {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
 
-        .container:hover {
-            transform: scale(1.03);
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
-        }
+  .profile img {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(110, 73, 58, 0.25);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
 
+  .profile img:hover {
+    transform: scale(1.05);
+  }
 
-        h3, h4 {
-            color: #c7b866;
-        }
+  .info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
 
-        img {
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
-            transition: transform 0.3s ease;
-        }
+  .info-list li {
+    margin-bottom: 10px;
+  }
 
-        img:hover {
-            transform: scale(1.05);
-        }
+  .info-list strong {
+    color: #6e493a;
+  }
 
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-        }
+  .info-list a {
+    color: #987284;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
 
-    </style>
+  .info-list a:hover {
+    color: #2b1c10;
+    text-decoration: underline;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #6e493a;
+    border-bottom: 2px solid #987284;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #6e493a;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  section h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #987284;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  ol {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  ol li {
+    margin-bottom: 8px;
+  }
+
+  ol li a {
+    color: #2b1c10;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  ol li a:hover {
+    color: #6e493a;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 700px) {
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile img {
+      margin: 0 auto;
+    }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="IMG_8297.JPG" alt="Artjom Skatškov" width="120" height="160">
-                    </td>
-                    <td>
-                        <h3 style="text-align: center;">Artjom Skatškov 2024</h3> 
-                        <ul>
-                            <li><strong>Sünnikoht:</strong> Tallinn</li>
-                            <li><strong>Iseloomustus:</strong> Rahulik</li>
-                            <li><strong>E-post:</strong> artjom.skatshkov@gmail.com</li>
-                            <li><strong>Veebileht:</strong> <a href="https://artjomskatskov23.thkit.ee">artjomskatskov23.thkit.ee</a></li>
-                            <li><strong>Moto:</strong> "Ära söö koos inimestega, kellega sa nälga ei jääks."</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <h4>Wordpress veebilehed:</h4>
-                        <ol>
-                            <li><a href="https://artjomskatskov23.thkit.ee/Portfoolio/">Portfoolio</a></li>
-                            <li><a href="https://artjomskatskov23.thkit.ee/resto/">Resto</a></li>
-                        </ol>
-                        <h4>Arendustsüklid</h4>
-                        <ol>
-                            <li> <a href="arendustsyklid/waterfall.html">Waterfall</a> </li>
-                            <li> <a href="arendustsyklid/Inkrementaalne arendusmudel.html">Inkrementaalne arendusmudel</a> </li>
-                            <li> <a href="arendustsyklid/Spiraalmudel.html">Spiraalmudel</a> </li>
-                            <li> <a href="arendustsyklid/Prototüüpimine.html">Prototüüpimine</a> </li>
-                        </ol>
-                        <h4>Arenduse Elutsüklid</h4>
-                        <ol>
-                            <li><a href="Arenduse Elutsüklid/Agile.html">Agile ja Agiilsed programmeerimisstiilid</li>
-                            <li><a href="Arenduse Elutsüklid/Big Bang.html">Big Bang</li>
-                            <li><a href="Arenduse Elutsüklid/DevOps.html">DevOps</li>
-                            <li><a href="Arenduse Elutsüklid/Extreme Programming.html">Extreme Programming</li>
-                            <li><a href="Arenduse Elutsüklid/V-Shape.html">V-Shape</li>
-                        </ol>
-                        <h4>Project Libre</h4>
-                        <ol>
-                            <li><a href="ProjectLibre/projektiplaan.html">Projekti plaan</li>
-                        </ol>
-                        <h4>CASE vahendid</h4>
-                        <ol>
-                            <li><a href="casevahendid/main.html">CASE vahendid</li>
-                        </ol>
-                        <h4>Andmebaasiga programm</h4>
-                        <ol>
-                            <li><a href="andmebaasiga programm/index.html">Andmebaasiga programm</li>
-                        </ol>
-                        <h3>Metshein.com harjutused</h3>
-                        <h4>HTML:</h4>
-                        <ol>
-                            <li><a href="CV_Artjom_Skatskov.html">Harjutus 3</a></li>
-                            <li><a href="index1.html">Harjutus 4</a></li>
-                            <li><a href="Harjutus 5TARpe23.html">Harjutus 5</a></li>
-                            <li><a href="Vormideloomine.html">Harjutus 6</a></li>
-                        </ol>
-                        <h4>JavaScript:</h4>
-                        <ol>
-                            <li><a href="JavaScript/ylesanne1/index.html">Ülesanne 1</a></li>
-                            <li><a href="JavaScript/ylesanne2/index.html">Ülesanne 2</a></li>
-                            <li><a href="JavaScript/ylesanne3/ylesanne3.html">Ülesanne 3</a></li>
-                            <li><a href="JavaScript/ylesanne4/ylesanne4.html">Ülesanne 4</a></li>
-                            <li><a href="JavaScript/ylesanne5/ylesanne5.html">Ülesanne 5</a></li>
-                            <li><a href="JavaScript/ylesanne6/index.html">Ülesanne 6</a></li>
-                            <li><a href="JavaScript/ylesanne7/index.html">Ülesanne 7</a></li>
-                            <li><a href="JavaScript/ylesanne8/index.html">Ülesanne 8</a></li>
-                            <li><a href="JavaScript/ylesanne9/index.html">Ülesanne 9</a></li>
-                            <li><a href="JavaScript/ylesanne10/index.html">Ülesanne 10</a></li>
-                            <li><a href="JavaScript/ylesanne11/index.html">Ülesanne 11</a></li>
-                            <li><a href="JavaScript/ylesanne12/index.html">Ülesanne 12</a></li>
-                            <li><a href="JavaScript/ylesanne13/index.html">Ülesanne 13</a></li>
-                            <li><a href="JavaScript/ylesanne14/index.html">Ülesanne 14</a></li>
-                            <li><a href="JavaScript/ylesanne15/index.html">Ülesanne 15</a></li>
-                            <li><a href="JavaScript/ylesanne16/index.html">Ülesanne 16</a></li>
-                            <li><a href="JavaScript/ylesanne17/index.html">Ülesanne 17</a></li>
-                            <li><a href="JavaScript/ylesanne18/index.html">Ülesanne 18</a></li>
-                            <li><a href="JavaScript/ylesanne19/index.html">Ülesanne 19</a></li>
-                            <li><a href="JavaScript/ylesanne20/index.html">Ülesanne 20</a></li>
-                            <li><a href="JavaScript/ylesanne21/index.html">Ülesanne 21</a></li>
-                            <li><a href="JavaScript/ylesanne22/index.html">Ülesanne 22</a></li>
-                            <li><a href="JavaScript/ylesanne23/index.html">Ülesanne 23</a></li>
-                        </ol>
-                        <h3>Teised harjutused</h3>
-                        <h4>CSS:</h4>
-                        <ol>
-                            <li><a href="cssloigud/index.html">CSS lõigud</a></li>
-                        </ol>
-                        <h4>JavaScript:</h4>
-                        <ol>
-                            <li><a href="joonistamine/index.html">Joonistamine</a></li>
-                        </ol>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+
+<header>
+  <h1>Artjom Skatškov 2024</h1>
+  <p>"Ära söö koos inimestega, kellega sa nälga ei jääks."</p>
+</header>
+
+<main>
+
+  <section class="profile">
+    <img src="IMG_8297.JPG" alt="Artjom Skatškov" />
+    <ul class="info-list">
+      <li><strong>Sünnikoht:</strong> Tallinn</li>
+      <li><strong>Iseloomustus:</strong> Rahulik</li>
+      <li><strong>E-post:</strong> artjom.skatshkov@gmail.com</li>
+      <li><strong>Veebileht:</strong> <a href="https://artjomskatskov23.thkit.ee" target="_blank" rel="noopener noreferrer">artjomskatskov23.thkit.ee</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Wordpress veebilehed</h2>
+    <ol>
+      <li><a href="https://artjomskatskov23.thkit.ee/Portfoolio/">Portfoolio</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Arendustsüklid</h2>
+    <ol>
+      <li><a href="arendustsyklid/waterfall.html">Waterfall</a></li>
+      <li><a href="arendustsyklid/Inkrementaalne arendusmudel.html">Inkrementaalne arendusmudel</a></li>
+      <li><a href="arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
+      <li><a href="arendustsyklid/Prototüüpimine.html">Prototüüpimine</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Arenduse Elutsüklid</h2>
+    <ol>
+      <li><a href="Arenduse Elutsüklid/Agile.html">Agile ja Agiilsed programmeerimisstiilid</a></li>
+      <li><a href="Arenduse Elutsüklid/Big Bang.html">Big Bang</a></li>
+      <li><a href="Arenduse Elutsüklid/DevOps.html">DevOps</a></li>
+      <li><a href="Arenduse Elutsüklid/Extreme Programming.html">Extreme Programming</a></li>
+      <li><a href="Arenduse Elutsüklid/V-Shape.html">V-Shape</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Project Libre</h2>
+    <ol>
+      <li><a href="ProjectLibre/projektiplaan.html">Projekti plaan</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>CASE vahendid</h2>
+    <ol>
+      <li><a href="casevahendid/main.html">CASE vahendid</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Andmebaasiga programm</h2>
+    <ol>
+      <li><a href="andmebaasiga programm/index.html">Andmebaasiga programm</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Metshein.com harjutused</h2>
+
+    <h3>HTML</h3>
+    <ol>
+      <li><a href="CV_Artjom_Skatskov.html">Harjutus 3</a></li>
+      <li><a href="index1.html">Harjutus 4</a></li>
+      <li><a href="Harjutus 5TARpe23.html">Harjutus 5</a></li>
+      <li><a href="Vormideloomine.html">Harjutus 6</a></li>
+    </ol>
+
+    <h3>JavaScript</h3>
+    <ol>
+      <li><a href="JavaScript/ylesanne1/index.html">Ülesanne 1</a></li>
+      <li><a href="JavaScript/ylesanne2/index.html">Ülesanne 2</a></li>
+      <li><a href="JavaScript/ylesanne3/ylesanne3.html">Ülesanne 3</a></li>
+      <li><a href="JavaScript/ylesanne4/ylesanne4.html">Ülesanne 4</a></li>
+      <li><a href="JavaScript/ylesanne5/ylesanne5.html">Ülesanne 5</a></li>
+      <li><a href="JavaScript/ylesanne6/index.html">Ülesanne 6</a></li>
+      <li><a href="JavaScript/ylesanne7/index.html">Ülesanne 7</a></li>
+      <li><a href="JavaScript/ylesanne8/index.html">Ülesanne 8</a></li>
+      <li><a href="JavaScript/ylesanne9/index.html">Ülesanne 9</a></li>
+      <li><a href="JavaScript/ylesanne10/index.html">Ülesanne 10</a></li>
+      <li><a href="JavaScript/ylesanne11/index.html">Ülesanne 11</a></li>
+      <li><a href="JavaScript/ylesanne12/index.html">Ülesanne 12</a></li>
+      <li><a href="JavaScript/ylesanne13/index.html">Ülesanne 13</a></li>
+      <li><a href="JavaScript/ylesanne14/index.html">Ülesanne 14</a></li>
+      <li><a href="JavaScript/ylesanne15/index.html">Ülesanne 15</a></li>
+      <li><a href="JavaScript/ylesanne16/index.html">Ülesanne 16</a></li>
+      <li><a href="JavaScript/ylesanne17/index.html">Ülesanne 17</a></li>
+      <li><a href="JavaScript/ylesanne18/index.html">Ülesanne 18</a></li>
+      <li><a href="JavaScript/ylesanne19/index.html">Ülesanne 19</a></li>
+      <li><a href="JavaScript/ylesanne20/index.html">Ülesanne 20</a></li>
+      <li><a href="JavaScript/ylesanne21/index.html">Ülesanne 21</a></li>
+      <li><a href="JavaScript/ylesanne22/index.html">Ülesanne 22</a></li>
+      <li><a href="JavaScript/ylesanne23/index.html">Ülesanne 23</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Teised harjutused</h2>
+
+    <h3>CSS</h3>
+    <ol>
+      <li><a href="cssloigud/index.html">CSS lõigud</a></li>
+    </ol>
+
+    <h3>JavaScript</h3>
+    <ol>
+      <li><a href="joonistamine/index.html">Joonistamine</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Agiilsed tarkvaraarenduse metoodikad</h2>
+    <ol>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/IteratiivneJaInkrementaalneLahenemine.html">Iteratiivne ja Inkrementaalne lähenemine</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/Tööd/sprint.html">Scrum põhimõtted</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/crystal.html">Crystal</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/RAD (Rapid Application Development)  + V-Model.html">RAD (Rapid Application Development) + V-Model</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Inglise keel (Agiilsed tarkvaraarenduse metoodikad)</h2>
+    <ol>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/IteratiivneJaInkrementaalneLähenemineIngliseKeeles.html">Iteratiivne ja Inkrementaalne lähenemine - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/waterfall.html">Waterfall - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/scrum.html">Scrum - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/agile12.html">12 Agile Põhimõtet - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/DoD.html">DoD - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/DSDM.html">DSDM - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/FDD.html">FDD - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/Lean.html">Lean - Inglise Keeles</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/Persona.html">Persona & User Story</a></li>
+    </ol>
+  </section>
+
+</main>
+
 </body>
 </html>

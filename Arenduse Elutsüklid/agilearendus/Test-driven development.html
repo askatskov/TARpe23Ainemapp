@@ -151,49 +151,63 @@
 <body>
     <h1>Test-driven development</h1>
     <p>
-        
+        <strong>Test-driven development (TDD)</strong> on arendusmeetod, mille puhul kirjutatakse testid enne koodi. 
+        See lähenemine aitab saavutada paremat koodi kvaliteeti, väldib üleliigset funktsionaalsust ning annab arendajale kiire tagasiside.
     </p>
-        <img src="" alt="TDD" width="500" height="auto">
+
+    <img src="test-driven-development-TDD.webp" alt="TDD" width="500" height="auto">
+
     <ol>
         <li>
-            
+            <strong>Testi kirjutamine (Write a Test)</strong>
+            <p>Kirjuta üksustest, mis kirjeldab, mida funktsionaalsus peab tegema. Test ebaõnnestub, kuna funktsionaalsust pole veel olemas.</p>
         </li>
+
         <li>
-            
+            <strong>Koodi kirjutamine (Make it Pass)</strong>
+            <p>Kirjuta minimaalne kood, mis paneb testi läbi minema. Eesmärk pole ideaalne lahendus, vaid funktsionaalsuse saavutamine.</p>
         </li>
+
         <li>
-           
+            <strong>Koodi täiustamine (Refactor)</strong>
+            <p>Paranda ja puhasta kood ilma testi käitumist muutmata. Eesmärk on säilitada funktsionaalsus ja parandada loetavust ning struktuuri.</p>
         </li>
+
         <li>
-            
+            <strong>Tsükli kordamine (Repeat)</strong>
+            <p>Korda protsessi järgmise nõude või funktsiooni jaoks. TDD on tsükliline lähenemine.</p>
         </li>
     </ol>
+
     <h2>CASE</h2>
-    <p><b></b><br>
-        </p>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        
-    <a href=""></a>
+    <p><b>Test-driven development</b><br>
+        xUnit või NUnit – C# testiraamistikud, mis sobivad üksustestide loomiseks enne koodi kirjutamist.<br>
+        Sobib ka: Continuous TDD, Data-driven development.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Head</th>
+                <th>Vead</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Parandab koodi kvaliteeti ja struktuuri.</td>
+                <td>Alguses aeglasem arendusprotsess.</td>
+            </tr>
+            <tr>
+                <td>Vähendab regressioonivigade riski.</td>
+                <td>Nõuab distsipliini ja harjumust järgida tsüklit.</td>
+            </tr>
+            <tr>
+                <td>Loob enesekindlust muudatuste tegemisel.</td>
+                <td>Ei sobi hästi visuaalsetele või UI-põhistele rakendustele ilma lisatööriistadeta.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="https://en.wikipedia.org/wiki/Test-driven_development">wikipedia</a>
 </body>
 </html>

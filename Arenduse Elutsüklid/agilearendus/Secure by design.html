@@ -151,49 +151,75 @@
 <body>
     <h1>Secure by design</h1>
     <p>
-        
+        Secure by design, in software engineering, means that software products and capabilities have been designed to be foundationally secure.
     </p>
-        <img src="" alt="SBD" width="500" height="auto">
-    <ol>
-        <li>
-            
-        </li>
-        <li>
-            
-        </li>
-        <li>
-           
-        </li>
-        <li>
-            
-        </li>
-    </ol>
+        <img src="secure-by-design-graphic_1.png" alt="SBD" width="500" height="auto">
+<ol>
+  <li>
+    <strong>Turvavajaduste määratlemine (Security Requirements Definition)</strong>
+    <p>Enne arendust tuvastatakse süsteemi ohud ja turvavajadused.</p>
+    <p>Rakendatakse ohuanalüüse (threat modeling).</p>
+    <p>Kasutatakse turvastandardeid (nt OWASP, NIST).</p>
+  </li>
+
+  <li>
+    <strong>Turvalise arhitektuuri ja disaini loomine (Secure Architecture & Design)</strong>
+    <p>Kujundatakse süsteem nii, et see oleks vaikimisi turvaline ("secure by default").</p>
+    <p>Rakendatakse põhimõtteid nagu vähimad õigused (least privilege), eraldatus (separation of concerns), kaitsekihtide kasutamine (defense in depth).</p>
+  </li>
+
+  <li>
+    <strong>Turvalise koodi arendamine (Secure Coding)</strong>
+    <p>Arendajad kasutavad turvalise programmeerimise juhiseid.</p>
+    <p>Vältitakse tuntud haavatavusi (nt SQL injection, XSS).</p>
+    <p>Kasutatakse turvaanalüüsivahendeid (nt SonarQube, Roslyn analyzers).</p>
+  </li>
+
+  <li>
+    <strong>Turbevalideerimine ja testimine (Security Testing & Validation)</strong>
+    <p>Teostatakse staatiline ja dünaamiline analüüs (SAST/DAST).</p>
+    <p>Läbiviidakse turvatestid, pentestid ja koodiülevaatused.</p>
+    <p>Automaatne turvatestimine CI/CD protsessis.</p>
+  </li>
+
+  <li>
+    <strong>Turvaparanduste haldus ja monitooring (Security Maintenance & Monitoring)</strong>
+    <p>Jälgitakse haavatavusi ja paikade ajakohasust.</p>
+    <p>Logitakse turvasündmusi ja rakendatakse intsidendihaldust.</p>
+    <p>Toetatakse elutsükli lõppfaasi turvalisust (patching, update policies).</p>
+  </li>
+</ol>
+
+
     <h2>CASE</h2>
-    <p><b></b><br>
+<p><b>Secure by design</b><br>
+    SonarQube – analüüsib C# koodi turva- ja kvaliteediprobleeme automaatselt CI/CD protsessis.<br>
+    Sobib ka: Continuous test-driven development.
+</p>
         </p>
         <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+    <thead>
+        <tr>
+            <th>Head</th>
+            <th>Vead</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Turvalisus on integreeritud juba algusest, vähendades hilisemaid riske.</td>
+            <td>Disaini keerukus ja nõuded võivad arendust aeglustada.</td>
+        </tr>
+        <tr>
+            <td>Parandab süsteemi vastupidavust rünnakute vastu.</td>
+            <td>Algne turvanõuete määratlemine võib olla keeruline ja ebatäpne.</td>
+        </tr>
+        <tr>
+            <td>Vähendab turvaauke ja parandab kasutajate usaldust.</td>
+            <td>Turvameetmete rakendamine võib tõsta arenduskulusid.</td>
+        </tr>
+    </tbody>
+</table>
         
-    <a href=""></a>
+    <a href="https://en.wikipedia.org/wiki/Secure_by_design">wikipedia</a>
 </body>
 </html>

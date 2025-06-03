@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specification by example</title>
+    <title> </title>
     <style>
         :root {
             --calm-gold: #D4AF37;
@@ -153,47 +153,67 @@
     <p>
         
     </p>
-        <img src="" alt="SBE" width="500" height="auto">
-    <ol>
-        <li>
-            
-        </li>
-        <li>
-            
-        </li>
-        <li>
-           
-        </li>
-        <li>
-            
-        </li>
-    </ol>
-    <h2>CASE</h2>
-    <p><b></b><br>
-        </p>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <img src="keyprocesspatternsofspecificationbyexample.png" alt="SBE" width="500" height="auto">
+<ol>
+    <li>
+        <strong>Ärinõuete avastamine ja selgitamine (Discovery & Exploration)</strong>
+        <p>Ärianalüütikud, arendajad ja kliendid töötavad koos, et tuvastada olulised ärireeglid ja käitumised.</p>
+        <p>Kasutatakse koostöiseid töötubasid (nt Example Mapping) ja arutelu, et mõista ootusi.</p>
+    </li>
+
+    <li>
+        <strong>Näidete koostamine (Specification with Examples)</strong>
+        <p>Iga nõue või reegel dokumenteeritakse konkreetsete ja arusaadavate näidetena (Given–When–Then-formaadis).</p>
+        <p>Näited esindavad nii tüüpilisi kui ka äärmuslikke juhtumeid.</p>
+    </li>
+
+    <li>
+        <strong>Automatiseerimine (Living Documentation)</strong>
+        <p>Näited automatiseeritakse testidena kasutades tööriistu nagu SpecFlow (C#), Cucumber, Behave vmt.</p>
+        <p>Nii toimivad nad nii dokumentatsioonina kui ka testidena.</p>
+    </li>
+
+    <li>
+        <strong>Koodi arendus ja tagasiside (Development & Feedback)</strong>
+        <p>Arendajad kirjutavad koodi, kuni testidega kirjeldatud näited läbivad.</p>
+        <p>Kiire tagasiside vigade ja arusaamatuste vältimiseks.</p>
+    </li>
+
+    <li>
+        <strong>Pidev hooldus ja areng (Evolution & Maintenance)</strong>
+        <p>Testide ja näidete baasi hoitakse ajakohasena vastavalt äri- ja süsteemimuutustele.</p>
+        <p>Dokumentatsioon elab koos koodiga ja jääb kasulikuks kogu elutsükli vältel.</p>
+    </li>
+</ol>
+
+<h2>CASE</h2>
+<p><b>Specification by example</b><br>
+    SpecFlow – testid kirjutatakse ärikeeles ja toimivad samal ajal dokumentatsioonina.<br>
+    Sobib ka: BDD, Acceptance TDD.
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Head</th>
+            <th>Vead</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Selge ja ühene kommunikatsioon arendajate ja äripoolte vahel.</td>
+            <td>Alguses võib olla aeganõudev näidete koostamine ja kokkuleppimine.</td>
+        </tr>
+        <tr>
+            <td>Tõstab tarkvara kvaliteeti ja vähendab vigade arvu.</td>
+            <td>Võib nõuda spetsiifilisi tööriistu ja koolitust meeskonnale.</td>
+        </tr>
+        <tr>
+            <td>Täpsed ja testitavad nõuded, mis vähendavad tõlgendusvigu.</td>
+            <td>Ei sobi hästi väga kiirete või dünaamiliste muutustega projektidele ilma paindlikkuseta.</td>
+        </tr>
+    </tbody>
+</table>
         
-    <a href=""></a>
+    <a href="https://en.wikipedia.org/wiki/Specification_by_example">wikipedia</a>
 </body>
 </html>

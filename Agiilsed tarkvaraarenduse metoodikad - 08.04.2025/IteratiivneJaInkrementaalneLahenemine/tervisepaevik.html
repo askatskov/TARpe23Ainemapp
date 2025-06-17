@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>Tervisepäevik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-xl mx-auto bg-white p-4 rounded shadow">
+    <h1 class="text-2xl font-bold mb-4">Tervisepäevik</h1>
+
+    <form id="form" class="grid gap-2 mb-4">
+      <input type="date" id="date" class="border p-2" required>
+      <input type="number" id="sleep" placeholder="Uni (h)" class="border p-2" required>
+      <input type="number" id="water" placeholder="Vesi (klaasid)" class="border p-2" required>
+      <input type="number" id="steps" placeholder="Sammud" class="border p-2" required>
+      <input type="number" id="mood" placeholder="Tuju (1–5)" min="1" max="5" class="border p-2" required>
+      <button class="bg-blue-500 text-white py-2 rounded">Salvesta</button>
+    </form>
+
+    <table class="w-full text-sm mb-4">
+      <thead><tr><th>Kuupäev</th><th>Uni</th><th>Vesi</th><th>Sammud</th><th>Tuju</th></tr></thead>
+      <tbody id="table"></tbody>
+    </table>
+
+    <canvas id="chart" height="150"></canvas>
+  </div>
+
+  <script>
+    const form = document.getElementById('form');
+    const table = document.getElementById('table');
+    const chart = document.getElementById('chart');
+    let entries = JSON.parse(localStorage.getItem('entries') || '[]');
+
+    function saveAndRender() {
+      localStorage.setItem('entries', JSON.stringify(entries));
+      table.innerHTML = entries.map(e =>
+        `<tr><td>${e.date}</td><td>${e.sleep}</td><td>${e.water}</td><td>${e.steps}</td><td>${e.mood}</td></tr>`
+      ).join('');
+      drawChart();
+    }
+
+    function drawChart() {
+      const last = entries.slice(-7);
+      new Chart(chart, {
+        type: 'line',
+        data: {
+          labels: last.map(e => e.date),
+          datasets: [{ label: 'Uni (h)', data: last.map(e => e.sleep), borderColor: 'blue', tension: 0.2 }]
+        },
+        options: { responsive: true }
+      });
+    }
+
+    form.onsubmit = e => {
+      e.preventDefault();
+      entries.push({
+        date: date.value,
+        sleep: +sleep.value,
+        water: +water.value,
+        steps: +steps.value,
+        mood: +mood.value
+      });
+      form.reset();
+      saveAndRender();
+    };
+
+    saveAndRender();
+  </script>
+</body>
+</html>

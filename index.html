@@ -6,145 +6,145 @@
 <title>Artjom Skatškov 2024</title>
 <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
 <style>
-  body {
-    margin: 0;
-    font-family: 'Lora', serif;
-    background: #f4e1d2;
-    color: #2b1c10;
-    padding: 40px 20px;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background: #000;
+  color: #fcece8;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  header {
-    text-align: center;
-    margin-bottom: 50px;
-  }
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-  header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    color: #6e493a;
-    margin-bottom: 8px;
-  }
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fcece8;
+  margin-bottom: 8px;
+}
 
-  header p {
-    font-style: italic;
-    font-weight: 500;
-    color: #987284;
-    font-size: 1.2rem;
-  }
+header p {
+  font-style: italic;
+  font-weight: 500;
+  color: #fcece8;
+  font-size: 1.2rem;
+}
 
+.profile {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+}
+
+.info-list strong {
+  color: #fcece8;
+}
+
+.info-list a {
+  color: #fcece8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.info-list a:hover {
+  color: #fcece8;
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fcece8;
+  border-bottom: 2px solid #555;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+section h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #fcece8;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+section h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #fcece8;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ol li {
+  margin-bottom: 8px;
+}
+
+ol li a {
+  color: #fcece8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ol li a:hover {
+  color: #fcece8;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
   .profile {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 50px;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
-
   .profile img {
-    width: 150px;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
-    box-shadow: 0 10px 25px rgba(110, 73, 58, 0.25);
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
+    margin: 0 auto;
   }
-
-  .profile img:hover {
-    transform: scale(1.05);
-  }
-
-  .info-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  .info-list li {
-    margin-bottom: 10px;
-  }
-
-  .info-list strong {
-    color: #6e493a;
-  }
-
-  .info-list a {
-    color: #987284;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-
-  .info-list a:hover {
-    color: #2b1c10;
-    text-decoration: underline;
-  }
-
-  section {
-    margin-bottom: 50px;
-  }
-
-  section h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #6e493a;
-    border-bottom: 2px solid #987284;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  section h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #6e493a;
-    margin-top: 30px;
-    margin-bottom: 12px;
-  }
-
-  section h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #987284;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  ol {
-    padding-left: 20px;
-    margin: 0;
-  }
-
-  ol li {
-    margin-bottom: 8px;
-  }
-
-  ol li a {
-    color: #2b1c10;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  ol li a:hover {
-    color: #6e493a;
-    text-decoration: underline;
-  }
-
-  @media (max-width: 700px) {
-    .profile {
-      flex-direction: column;
-      text-align: center;
-    }
-    .profile img {
-      margin: 0 auto;
-    }
-  }
+}
 </style>
 </head>
 <body>
@@ -155,65 +155,15 @@
 </header>
 
 <main>
-
-  <section class="profile">
-    <img src="IMG_8297.JPG" alt="Artjom Skatškov" />
+  <div class="profile">
+    <img src="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IMG_8297.JPG" alt="Artjom Skatškov" />
     <ul class="info-list">
       <li><strong>Sünnikoht:</strong> Tallinn</li>
       <li><strong>Iseloomustus:</strong> Rahulik</li>
       <li><strong>E-post:</strong> artjom.skatshkov@gmail.com</li>
       <li><strong>Veebileht:</strong> <a href="https://artjomskatskov23.thkit.ee" target="_blank" rel="noopener noreferrer">artjomskatskov23.thkit.ee</a></li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Wordpress veebilehed</h2>
-    <ol>
-      <li><a href="https://artjomskatskov23.thkit.ee/Portfoolio/">Portfoolio</a></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Arendustsüklid</h2>
-    <ol>
-      <li><a href="arendustsyklid/waterfall.html">Waterfall</a></li>
-      <li><a href="arendustsyklid/Inkrementaalne arendusmudel.html">Inkrementaalne arendusmudel</a></li>
-      <li><a href="arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
-      <li><a href="arendustsyklid/Prototüüpimine.html">Prototüüpimine</a></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Arenduse Elutsüklid</h2>
-    <ol>
-      <li><a href="Arenduse Elutsüklid/Agile.html">Agile ja Agiilsed programmeerimisstiilid</a></li>
-      <li><a href="Arenduse Elutsüklid/Big Bang.html">Big Bang</a></li>
-      <li><a href="Arenduse Elutsüklid/DevOps.html">DevOps</a></li>
-      <li><a href="Arenduse Elutsüklid/Extreme Programming.html">Extreme Programming</a></li>
-      <li><a href="Arenduse Elutsüklid/V-Shape.html">V-Shape</a></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Project Libre</h2>
-    <ol>
-      <li><a href="ProjectLibre/projektiplaan.html">Projekti plaan</a></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>CASE vahendid</h2>
-    <ol>
-      <li><a href="casevahendid/main.html">CASE vahendid</a></li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Andmebaasiga programm</h2>
-    <ol>
-      <li><a href="andmebaasiga programm/index.html">Andmebaasiga programm</a></li>
-    </ol>
-  </section>
+  </div>
 
   <section>
     <h2>Metshein.com harjutused</h2>
@@ -226,8 +176,14 @@
       <li><a href="Vormideloomine.html">Harjutus 6</a></li>
     </ol>
 
+    <h3>CSS</h3>
+    <ol>
+      <li><a href="cssloigud/index.html">CSS lõigud</a></li>
+    </ol>
+
     <h3>JavaScript</h3>
     <ol>
+      <li><a href="joonistamine/index.html">Joonistamine</a></li>
       <li><a href="JavaScript/ylesanne1/index.html">Ülesanne 1</a></li>
       <li><a href="JavaScript/ylesanne2/index.html">Ülesanne 2</a></li>
       <li><a href="JavaScript/ylesanne3/ylesanne3.html">Ülesanne 3</a></li>
@@ -255,16 +211,30 @@
   </section>
 
   <section>
-    <h2>Teised harjutused</h2>
-
-    <h3>CSS</h3>
+    <h2>CASE vahendid</h2>
     <ol>
-      <li><a href="cssloigud/index.html">CSS lõigud</a></li>
+      <li><a href="casevahendid/main.html">CASE vahendid</a></li>
     </ol>
+  </section>
 
-    <h3>JavaScript</h3>
+  <section>
+    <h2>Arendustsüklid</h2>
     <ol>
-      <li><a href="joonistamine/index.html">Joonistamine</a></li>
+      <li><a href="arendustsyklid/waterfall.html">Waterfall</a></li>
+      <li><a href="arendustsyklid/Inkrementaalne arendusmudel.html">Inkrementaalne arendusmudel</a></li>
+      <li><a href="arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
+      <li><a href="arendustsyklid/Prototüüpimine.html">Prototüüpimine</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Arenduse Elutsüklid</h2>
+    <ol>
+      <li><a href="Arenduse Elutsüklid/Agile.html">Agile ja Agiilsed programmeerimisstiilid</a></li>
+      <li><a href="Arenduse Elutsüklid/Big Bang.html">Big Bang</a></li>
+      <li><a href="Arenduse Elutsüklid/DevOps.html">DevOps</a></li>
+      <li><a href="Arenduse Elutsüklid/Extreme Programming.html">Extreme Programming</a></li>
+      <li><a href="Arenduse Elutsüklid/V-Shape.html">V-Shape</a></li>
     </ol>
   </section>
 
@@ -275,11 +245,13 @@
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/Tööd/sprint.html">Scrum põhimõtted</a></li>
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/crystal.html">Crystal</a></li>
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/RAD (Rapid Application Development)  + V-Model.html">RAD (Rapid Application Development) + V-Model</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/dsdm.html">DSDM</a></li>
+      <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/xp.html">XP</a></li>
     </ol>
   </section>
 
   <section>
-    <h2>Inglise keel (Agiilsed tarkvaraarenduse metoodikad)</h2>
+    <h2>Inglise keeles</h2>
     <ol>
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/IteratiivneJaInkrementaalneLähenemineIngliseKeeles.html">Iteratiivne ja Inkrementaalne lähenemine - Inglise Keeles</a></li>
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/IteratiivneJaInkrementaalneLahenemine/waterfall.html">Waterfall - Inglise Keeles</a></li>
@@ -290,6 +262,27 @@
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/FDD.html">FDD - Inglise Keeles</a></li>
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/Lean.html">Lean - Inglise Keeles</a></li>
       <li><a href="Agiilsed tarkvaraarenduse metoodikad - 08.04.2025/07.05.2025/Persona.html">Persona & User Story</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Projekti plaanid</h2>
+    <ol>
+      <li><a href="ProjectLibre/projektiplaan.html">ProjectLibre & Microsoft Project</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Andmebaasiga programm</h2>
+    <ol>
+      <li><a href="andmebaasiga programm/index.html">Andmebaasiga programm</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Wordpress veebilehed</h2>
+    <ol>
+      <li><a href="https://artjomskatskov23.thkit.ee/Portfoolio/">Portfoolio</a></li>
     </ol>
   </section>
 

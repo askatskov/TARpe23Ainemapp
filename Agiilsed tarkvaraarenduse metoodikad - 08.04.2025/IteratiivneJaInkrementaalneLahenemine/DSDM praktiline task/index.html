@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meeleolupäevik</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Minu Meeleolupäevik</h1>
+  </header>
+
+  <section id="add-entry">
+    <h2>Lisa uus sissekanne</h2>
+    <form id="mood-form">
+      <label for="date">Kuupäev:</label>
+      <input type="date" id="date" required />
+
+      <label for="mood">Meeleolu:</label>
+      <select id="mood" required>
+        <option value="">Vali meeleolu</option>
+        <option value="😊 Õnnelik">😊 Õnnelik</option>
+        <option value="😐 Neutraalne">😐 Neutraalne</option>
+        <option value="😢 Kurb">😢 Kurb</option>
+        <option value="😠 Ärritunud">😠 Ärritunud</option>
+        <option value="😴 Väsinud">😴 Väsinud</option>
+      </select>
+
+      <label for="reason">Põhjus / kommentaar:</label>
+      <textarea id="reason" rows="3" placeholder="Soovi korral lisa selgitus"></textarea>
+
+      <button type="submit">Salvesta</button>
+    </form>
+  </section>
+
+  <section id="mood-list">
+    <h2>Sissekannete nimekiri</h2>
+    <ul id="list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
